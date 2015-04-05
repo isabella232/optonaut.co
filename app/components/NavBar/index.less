@@ -7,31 +7,39 @@
   right: 0;
   background: #c6003b;
   z-index: 100;
+
+  @media (max-width: 749px) {
+    height: 60px;
+  }
+}
+
+#navbar-wrapper {
+  height: 100%;
 }
 
 #navbar-logo {
   float: left;
-  height: 100px;
+  height: 100%;
   display: flex;
-  align-items: center;
 }
 
 #navbar-logo:before {
   content: "\e601";
-  font-size: 3em;
+  font-size: 3rem;
   color: #fff;
+  margin: auto 0;
 }
 
 #navbar-nav {
   float: right;
-  height: 100px;
+  height: 100%;
   display: flex;
   align-items: center;
 
   a {
     text-decoration: none;
     font-size: 0.9rem;
-    margin: 0 16px;
+    margin: 0 0.6rem;
 
     &:last-child {
       margin-right: 0;
@@ -54,4 +62,22 @@
       background: none;
     }
   }
+}
+
+#navbar-menu {
+  display: none;
+
+  @media (max-width: 749px) {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+#navbar-menu:before {
+  content: "\e9bd";
+  font-size: 1.5rem;
+  color: #fff;
+  margin: auto 0;
 }

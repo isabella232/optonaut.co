@@ -5,6 +5,11 @@
   position: relative;
   float: left;
   color: #fff;
+
+  @media (max-width: 749px) {
+    height: 500px;
+    margin-top: 60px;
+  }
 }
 
 #section-home-bg {
@@ -84,20 +89,42 @@
 
 #section-home-foot-wrapper {
   display: flex;
-  justify-content: space-between;
   height: 100%;
   align-items: center;
-  flex-wrap: wrap;
+
+  @media (max-width: 1199px) {
+    font-size: 1.7vw;
+  }
+
+  @media (max-width: 749px) {
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 399px) {
+    font-size: 0.75rem;
+  }
+}
+
+#section-home-foot-desc {
+  white-space: nowrap;
+  flex-grow: 3;
 }
 
 #section-home-foot-button {
-    background: #c6003b;
-    color: #fff;
-    font-weight: 700;
-    padding: 0.4rem 0.8rem;
-    border: 0;
-    border-radius: 0;
-    font-size: 1rem;
-    text-transform: none;
-    white-space: nowrap;
+  flex-grow: 1;
+  text-align: center;
+  width: auto;
+  background: #c6003b;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border: 0;
+  border-radius: 0;
+  text-transform: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #c6003b;
+    background: #fff;
+  }
 }

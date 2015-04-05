@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var autoprefixer = require('autoprefixer-core');
 
 module.exports = {
     cache: true,
@@ -25,7 +26,7 @@ module.exports = {
             loader: 'style!css'
         }, {
             test: /\.less$/,
-            loader: 'style!css!less'
+            loader: 'style!css!postcss!less'
         }, {
             test: /\.jsx$/,
             exclude: /node_modules/,
@@ -38,6 +39,9 @@ module.exports = {
             loader: 'url?limit=100000'
         }]
     },
+    postcss: [autoprefixer({
+        browsers: ['last 2 version']
+    })],
     plugins: [new HtmlWebpackPlugin({
         template: 'index.html'
     })],

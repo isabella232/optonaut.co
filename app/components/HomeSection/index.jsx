@@ -5,7 +5,35 @@ import React from 'react';
 require('./index.less');
 
 let HomeSection = React.createClass({
+
+  getInitialState() {
+    return {
+      showInviteForm: false
+    };
+  },
+
+  showInviteForm: function() {
+    this.setState({ showInviteForm: true });
+  },
+
   render() {
+    let foot;
+    if (this.state.showInviteForm) {
+      foot = (
+        <div className='container' id='section-home-foot-wrapper'>
+        <span>Some Form</span>
+          <div id='section-home-foot-button' onClick={this.showInviteForm}>Yes, I Want An Invite</div>
+        </div>
+      );
+    } else {
+      foot = (
+        <div className='container' id='section-home-foot-wrapper'>
+          <div id='section-home-foot-desc'>The Optonaut App is <strong>invite only</strong> at this stage. <span className='hide-small'>Request an invite to get <strong>early access</strong>.</span></div>
+          <div id='section-home-foot-button' onClick={this.showInviteForm}>Request Invite</div>
+        </div>
+      );
+    }
+
     return (
       <div id='section-home'>
         <div id='section-home-bg'>
@@ -19,12 +47,7 @@ let HomeSection = React.createClass({
           </div>
           <div className='icon' id='section-home-play'></div>
         </div>
-        <div id='section-home-foot'>
-          <div className='container' id='section-home-foot-wrapper'>
-            <div id='section-home-foot-desc'>The Optonaut App is <strong>invite only</strong> at this stage. Request an invite to get <strong>early access</strong>.</div>
-            <div id='section-home-foot-button'>Reqest Invite</div>
-          </div>
-        </div>
+        <div id='section-home-foot'>{foot}</div>
       </div>
     );
   }
