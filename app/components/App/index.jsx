@@ -9,7 +9,7 @@ require('./index.less');
 let App = React.createClass({
   render() {
     return (
-      <div className='container'>
+      <div>
         <NavBar/>
         <HomeSection/>
       </div>
