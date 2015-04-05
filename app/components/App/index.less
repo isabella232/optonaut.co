@@ -27,10 +27,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-html {
+html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 749px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 399px) {
+    font-size: 13px;
+  }
 }
