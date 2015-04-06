@@ -21,6 +21,7 @@
     "axios": "^0.5.2",
     "normalize.css": "^3.0.3",
     "react": "^0.13.1",
+    "react-youtube": "^3.0.1",
     "skeleton-less": "^2.0.1"
   },
   "devDependencies": {

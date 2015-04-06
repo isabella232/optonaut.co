@@ -20,6 +20,8 @@
   top: 0;
   bottom: 0;
   overflow: hidden;
+  background: url(../../assets/images/home.jpg) no-repeat;
+  background-size: cover;
 }
 
 #section-home-bg video {
@@ -27,8 +29,6 @@
   display: inline-block;
   bottom: 0;
   width: 100%;
-  background: url(../../assets/images/home.jpg) no-repeat;
-  background-size: cover;
 
   @media (max-width: 1099px) {
     width: auto;
@@ -39,6 +39,22 @@
 #section-home-content {
   padding-top: 3%;
   height: 80%;
+}
+
+#section-home-video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  & > div {
+    margin: auto;
+  }
+
+  .spinner {
+    background-color: #fff;
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 #section-home-headline {
