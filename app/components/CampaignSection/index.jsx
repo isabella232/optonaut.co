@@ -41,26 +41,14 @@ export default class CampaignSection extends React.Component {
             </div>
           </div>
         </div>
-        <div className='row' id='section-campaign-press'>
+        <div id='section-campaign-press'>
           <div className='container'>
-            <div className='two columns'>
-              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
-            </div>
-            <div className='two columns'>
-              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
-            </div>
-            <div className='two columns'>
-              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
-            </div>
-            <div className='two columns'>
-              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
-            </div>
-            <div className='two columns'>
-              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
-            </div>
-            <div className='two columns'>
-              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
-            </div>
+            <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
+            <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
+            <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
+            <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
+            <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
+            <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
           </div>
         </div>
       </div>
