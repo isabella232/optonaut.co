@@ -2,19 +2,22 @@
 
 import React from 'react';
 import HomeSection from '../HomeSection';
+import CampaignSection from '../CampaignSection';
+import FeaturesSection from '../FeaturesSection';
 import NavBar from '../NavBar';
 
 require('./index.less');
 
-let App = React.createClass({
+export default class App extends React.Component {
   render() {
     return (
       <div>
         <NavBar/>
         <HomeSection/>
+        <CampaignSection/>
+        <FeaturesSection/>
+        <CampaignSection/>
       </div>
     );
   }
-});
-
-module.exports = App;
+}

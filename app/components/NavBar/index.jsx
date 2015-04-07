@@ -4,10 +4,24 @@ import React from 'react';
 
 require('./index.less');
 
-let NavBar = React.createClass({
+export default class NavBar extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      shrink: window.scrollY > 40
+    };
+    window.addEventListener('scroll', function() {
+      const shrink = window.scrollY > 40;
+      if (shrink !== this.state.shrink) {
+        this.setState({ shrink });
+      }
+    }.bind(this));
+  }
+
   render() {
     return (
-      <div id='navbar'>
+      <div className={this.state.shrink ? 'shrink' : ''} id='navbar'>
         <div className='container' id='navbar-wrapper'>
           <div className='icon' id='navbar-logo'></div>
           <div className='hide-small' id='navbar-nav'>
@@ -20,6 +34,5 @@ let NavBar = React.createClass({
       </div>
     );
   }
-});
 
-module.exports = NavBar;
+}
