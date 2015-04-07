@@ -33,9 +33,13 @@ export default class HomeSection extends React.Component {
     let foot;
     if (this.state.showInviteForm) {
       foot = (
-        <div className='container' id='section-home-foot-wrapper'>
-        <span>Some Form</span>
-          <div id='section-home-foot-button' onClick={this.showInviteForm.bind(this)}>Yes, I Want An Invite</div>
+        <div className='container' id='section-home-foot-form'>
+          <div className='one-half column'>
+            <input type='email' placeholder='Email' />
+          </div>
+          <div className='one-half column'>
+            <div id='section-home-foot-button' onClick={this.showInviteForm.bind(this)}>Yes, I Want An Invite</div>
+          </div>
         </div>
       );
     } else {
