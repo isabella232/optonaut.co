@@ -3,4 +3,8 @@
 import React from 'react';
 import App from './components/App';
 
-React.render(<App/>, document.body);
+if ('document' in window) {
+  React.render(<App/>, window.document.body);
+}
+
+export default App;

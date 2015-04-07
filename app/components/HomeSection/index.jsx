@@ -5,10 +5,6 @@ import YouTube from 'react-youtube';
 
 require('./index.less');
 
-window.onYouTubePlayerReady = function() {
-  console.log('redy');
-};
-
 export default class HomeSection extends React.Component {
 
   constructor(props) {

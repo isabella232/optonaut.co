@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && webpack --config webpack.prerender.config.js --display-error-details",
     "start": "webpack-dev-server --hot --inline --history-api-fallback --devtool source-map --host 0.0.0.0 --port 8000"
   },
   "repository": {
@@ -34,9 +35,11 @@
     "eslint": "^0.18.0",
     "eslint-loader": "^0.9.0",
     "eslint-plugin-react": "^2.0.2",
+    "extract-text-webpack-plugin": "^0.5.0",
     "html-webpack-plugin": "^1.1.0",
     "less": "^2.5.0",
     "less-loader": "^2.2.0",
+    "null-loader": "^0.1.1",
     "postcss-loader": "^0.3.0",
     "react-hot-loader": "^1.2.4",
     "style-loader": "^0.9.0",

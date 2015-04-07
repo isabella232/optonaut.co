@@ -2,9 +2,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer-core');
 
 module.exports = {
-    cache: true,
-    debug: true,
-    devtool: false,
     entry: './app',
     output: {
         path: './build',
@@ -30,7 +27,7 @@ module.exports = {
         }, {
             test: /\.jsx$/,
             exclude: /node_modules/,
-            loader: 'react-hot!babel-loader?optional=runtime'
+            loader: 'react-hot!babel?optional=runtime'
         }, {
             test: /\.(svg|jpg|png)$/,
             loader: 'url?limit=10000'
