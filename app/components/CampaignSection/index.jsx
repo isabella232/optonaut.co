@@ -40,24 +40,26 @@ export default class CampaignSection extends React.Component {
             Reward 4
             </div>
           </div>
-          <div className='row'>
+        </div>
+        <div className='row' id='section-campaign-press'>
+          <div className='container'>
             <div className='two columns'>
-              Press 1
+              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
             </div>
             <div className='two columns'>
-              Press 1
+              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
             </div>
             <div className='two columns'>
-              Press 1
+              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
             </div>
             <div className='two columns'>
-              Press 1
+              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
             </div>
             <div className='two columns'>
-              Press 1
+              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
             </div>
             <div className='two columns'>
-              Press 1
+              <a href='#'><img src={require('../../assets/images/techcrunch.svg')} /></a>
             </div>
           </div>
         </div>
