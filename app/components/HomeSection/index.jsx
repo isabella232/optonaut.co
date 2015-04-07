@@ -51,7 +51,7 @@ export default class HomeSection extends React.Component {
     if (!this.state.showVideo && window.innerWidth >= 750) {
       bgVideo = (
         <video autoPlay loop poster={require('../../assets/images/home.jpg')}>
-          <source src='http://localhost:8080/home.mp4' type='video/mp4'/>
+          <source src='http://static.optonaut.io.s3.amazonaws.com/home.mp4' type='video/mp4'/>
         </video>
       );
     }
