@@ -21,8 +21,9 @@ export default class Footer extends React.Component {
             </ul>
           </div>
           <div className='two columns'>
-            <h5>Partner</h5>
+            <h5>Hardware</h5>
             <ul>
+              <li><a href='#'>Pre-Order</a></li>
               <li><a href='#'>Durovis Dive</a></li>
               <li><a href='#'>Kula3D</a></li>
             </ul>
@@ -31,6 +32,7 @@ export default class Footer extends React.Component {
             <h5>Legal</h5>
             <ul>
               <li><a href='#'>Imprint</a></li>
+              <li><a href='#'>Contact</a></li>
               <li><a href='#'>Terms</a></li>
             </ul>
           </div>
