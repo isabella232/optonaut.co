@@ -38,15 +38,15 @@ export default class HomeSection extends React.Component {
             <input type='email' placeholder='Email' />
           </div>
           <div className='one-half column'>
-            <div id='section-home-foot-button' onClick={this.showInviteForm.bind(this)}>Yes, I Want An Invite</div>
+            <div className='button' onClick={this.showInviteForm.bind(this)}>Yes, I Want An Invite</div>
           </div>
         </div>
       );
     } else {
       foot = (
         <div className='container' id='section-home-foot-wrapper'>
-          <div id='section-home-foot-desc'>The Optonaut App is <strong>invite only</strong> at this stage. <span className='hide-small'>Request an invite to get <strong>early access</strong>.</span></div>
-          <div id='section-home-foot-button' onClick={this.showInviteForm.bind(this)}>Request Invite</div>
+          <div id='section-home-foot-desc'>The Optonaut App is <strong>invite only</strong> at this stage. Request an invite to get <strong>early access</strong>.</div>
+          <div className='button' id='section-home-foot-button' onClick={this.showInviteForm.bind(this)}>Request Invite</div>
         </div>
       );
     }

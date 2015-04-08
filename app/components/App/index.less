@@ -2,6 +2,8 @@
 @import "~skeleton-less/less/skeleton.less";
 @import url("http://fonts.googleapis.com/css?family=Roboto:500,300,700");
 
+@import "../../common.less";
+
 @font-face {
   font-family: 'icomoon';
   src:url('../../assets/fonts/icomoon.eot');
@@ -53,9 +55,27 @@ h2 {
   display: none !important;
 }
 
-@media (max-width: 749px) {
-  .hide-small {
-    display: none !important;
+.button {
+  background: @red;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  height: auto;
+  text-transform: none;
+  font-size: 1em;
+  letter-spacing: 0;
+  width: 100%;
+  line-height: 1.6;
+  margin: 0;
+
+  &:hover {
+    color: @red;
+    background: #fff;
   }
 }
 
