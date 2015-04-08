@@ -10,7 +10,14 @@ export default class Footer extends React.Component {
       <div id='footer'>
         <div className='container'>
           <div className='six columns'>
-            Optonaut 2015<br/><br/><strong>mail@optonaut.io</strong>
+            <div id='footer-copy'>Optonaut 2015</div>
+            <a href='#' title='Facebook'><span className='icon' id='footer-facebook'></span></a>
+            <a href='#' title='Twitter'><span className='icon' id='footer-twitter'></span></a>
+            <a href='#' title='Google Plus'><span className='icon' id='footer-google'></span></a>
+            <a href='#' title='Youtube'><span className='icon' id='footer-youtube'></span></a>
+            <a href='#' title='Instagram'><span className='icon' id='footer-instagram'></span></a>
+            <a href='#' title='Pinterest'><span className='icon' id='footer-pinterest'></span></a>
+            <a href='#' title='Github'><span className='icon' id='footer-github'></span></a>
           </div>
           <div className='two columns'>
             <h5>About</h5>
