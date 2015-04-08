@@ -5,7 +5,7 @@
 }
 
 #section-campaign-content {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 #section-campaign-headline {
@@ -56,14 +56,58 @@
 #section-campaign-button {
   width: 100%;
   max-width: 500px;
-  margin: 3rem auto;
+  margin: 3rem auto 4rem;
 }
 
 #section-campaign-rewards {
+  display: flex;
+  flex-wrap: wrap;
+
   & > div {
-    background: #f5f5f5;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 300px;
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-campaign-reward-price {
+  float: left;
+  width: 17%;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-right: 3%;
+}
+
+.section-campaign-reward-info {
+  float: left;
+  width: 38%;
+  margin: 0.20rem 2% 0 0;
+}
+
+.section-campaign-reward-title {
+  float: left;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.section-campaign-reward-status {
+  float: left;
+  clear: both;
+  font-weight: 300;
+  font-size: 0.65rem;
+  color: #4aaf51;
+}
+
+.section-campaign-reward-image {
+  float: right;
+  width: 40%;
+  margin-top: -0.7rem;
+  
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
