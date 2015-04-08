@@ -22,7 +22,7 @@ export default class FeaturesSection extends React.Component {
             </div>
             <div className='one-third column'>
               <div className='icon' id='section-features-feature3'></div>
-              <span>View With Any VR Glasses</span>
+              <span>Works With Any VR Glasses</span>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default class HardwareSection extends React.Component {
     return (
       <div id='section-hardware'>
         <div className='container' id='section-hardware-content'>
-          <h2>All You Need</h2>
+          <h2>You Need Three Things</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <strong>text ever since the 1500s,</strong> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.</p>
           <div className='row' id='section-hardware-list'>
             <div className='one-third column'>
@@ -22,9 +22,12 @@ export default class HardwareSection extends React.Component {
             </div>
             <div className='one-third column'>
               <img src={require('../../assets/images/hardware3.png')} />
-              <span>View With Any VR Glasses</span>
+              <span>VR Glasses Like Google Cardboard</span>
             </div>
           </div>
+          <a className='button' href="#">Pre-Order Full Hardware Set</a>
+          <br/>
+          <br/>
         </div>
       </div>
     );
