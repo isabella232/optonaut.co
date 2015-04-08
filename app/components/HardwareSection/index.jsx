@@ -14,15 +14,15 @@ export default class HardwareSection extends React.Component {
           <div className='row' id='section-hardware-list'>
             <div className='one-third column'>
               <img src={require('../../assets/images/hardware1.png')} />
-              <span>Easy Capturing Process</span>
+              <span>Optocam</span>
             </div>
             <div className='one-third column'>
               <img src={require('../../assets/images/hardware2.png')} />
-              <span>Full 360° In Real 3D</span>
+              <span>Your Smartphone</span>
             </div>
             <div className='one-third column'>
               <img src={require('../../assets/images/hardware3.png')} />
-              <span>VR Glasses Like Google Cardboard</span>
+              <span>Virtual Reality Glasses</span>
             </div>
           </div>
           <a className='button' href="#">Pre-Order Full Hardware Set</a>
