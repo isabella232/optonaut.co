@@ -24,6 +24,7 @@
   a {
     text-decoration: none;
     color: #fff;
+    display: inline-block;
   }
 
   .icon {
@@ -32,7 +33,20 @@
   }
 }
 
+#footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > div {
+    flex-grow: 1;
+  }
+}
+
 #footer-copy {
+  margin-bottom: 1rem;
+}
+
+#footer-social {
   margin-bottom: 1rem;
 }
 

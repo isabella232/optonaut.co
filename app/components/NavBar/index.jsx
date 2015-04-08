@@ -23,7 +23,7 @@ export default class NavBar extends React.Component {
     return (
       <div className={this.state.shrink ? 'shrink' : ''} id='navbar'>
         <div className='container' id='navbar-wrapper'>
-          <div className='icon' id='navbar-logo'></div>
+          <div className='icon' id='navbar-logo'><a href='/'></a></div>
           <div className='hide-small' id='navbar-nav'>
             <a className='navbar-nav-default' href="#">How It Works</a>
             <a className='navbar-nav-default' href="#">Login</a>
