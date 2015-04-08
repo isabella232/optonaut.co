@@ -5,28 +5,54 @@ import YouTube from 'react-youtube';
 
 require('./index.less');
 
+function validateEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+}
+
 export default class HomeSection extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
+      invalidInput: false,
+      submitted: false,
       showInviteForm: false,
       showVideo: false,
       showSpinner: false
     };
   }
 
-  showInviteForm() {
-    this.setState({ showInviteForm: true });
-  }
-
   showVideo() {
     this.setState({ showSpinner: true, showVideo: true });
   }
 
-  _onReady() {
+  hideSpinner() {
     this.setState({ showSpinner: false });
-    console.log('redy');
+  }
+
+  watchForEnter(e) {
+    if (e.keyCode === 13) {
+      this.submitInviteRequest();
+    }
+  }
+
+  showInviteForm() {
+    this.setState({ showInviteForm: true }, function() {
+      React.findDOMNode(this.refs.email).focus();
+    });
+  }
+
+  submitInviteRequest() {
+    const email = React.findDOMNode(this.refs.email).value;
+    if (email && validateEmail(email)) {
+      this.setState({ submitted: true, showInviteForm: false });
+    } else {
+      this.setState({ invalidInput: true });
+      setTimeout(function() {
+        this.setState({ invalidInput: false });
+      }.bind(this), 500);
+    }
   }
 
   render() {
@@ -35,11 +61,17 @@ export default class HomeSection extends React.Component {
       foot = (
         <div className='container' id='section-home-foot-form'>
           <div className='one-half column'>
-            <input type='email' placeholder='Email' />
+            <input className={this.state.invalidInput ? 'invalid' : ''} name='email' onKeyUp={this.watchForEnter.bind(this)} placeholder='Email' ref='email' type='email' />
           </div>
           <div className='one-half column'>
-            <div className='button' onClick={this.showInviteForm.bind(this)}>Yes, I Want An Invite</div>
+            <div className='button' onClick={this.submitInviteRequest.bind(this)}>Yes, I Want An Invite</div>
           </div>
+        </div>
+      );
+    } else if (this.state.submitted) {
+      foot = (
+        <div className='container' id='section-home-foot-wrapper'>
+          <div id='section-home-foot-message'>Good News. We added you to our waiting list. <strong>You will get a notification email soon.</strong></div>
         </div>
       );
     } else {
@@ -84,7 +116,7 @@ export default class HomeSection extends React.Component {
           <div id='section-home-video'>
             <div className={this.state.showSpinner ? 'spinner' : 'hide'}></div>
             <div className={this.state.showSpinner ? 'hide' : ''}>
-              <YouTube onReady={this._onReady.bind(this)}
+              <YouTube onReady={this.hideSpinner.bind(this)}
                        opts={opts}
                        url={'http://www.youtube.com/watch?v=pEkWlOYnS7A'}
               />
