@@ -18,7 +18,7 @@ export default class CampaignSection extends React.Component {
           <div className='row'>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <strong>text ever since the 1500s</strong>.</p>
           </div>
-          <a href="#">Yes, I Support This</a>
+          <a href="#" className='button'>Yes, I Support This</a>
           <div className='row' id='section-campaign-rewards'>
             <div className='three columns'>
             Reward 1

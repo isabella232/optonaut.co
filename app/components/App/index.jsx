@@ -4,6 +4,7 @@ import React from 'react';
 import HomeSection from '../HomeSection';
 import CampaignSection from '../CampaignSection';
 import FeaturesSection from '../FeaturesSection';
+import HardwareSection from '../HardwareSection';
 import FaqSection from '../FaqSection';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
@@ -18,6 +19,7 @@ export default class App extends React.Component {
         <HomeSection/>
         <CampaignSection/>
         <FeaturesSection/>
+        <HardwareSection/>
         <FaqSection/>
         <Footer/>
       </div>
