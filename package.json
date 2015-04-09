@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && webpack --config webpack.prerender.config.js --display-error-details",
+    "build": "webpack -p && webpack --config webpack.prerender.config.js --display-error-details",
     "start": "webpack-dev-server --hot --inline --history-api-fallback --devtool source-map --host 0.0.0.0 --port 8000"
   },
   "repository": {
