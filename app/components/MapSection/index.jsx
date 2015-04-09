@@ -15,7 +15,9 @@ export default class MapSection extends React.Component {
     this.state = {
       activePoint: 0
     };
+  }
 
+  componentDidMount() {
     interval = setInterval(function() {
       const activePoint = (this.state.activePoint + 1) % numPoints;
       this.setState({ activePoint });
