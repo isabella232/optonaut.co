@@ -25,7 +25,7 @@ export default class NavBar extends React.Component {
         <div className='container' id='navbar-wrapper'>
           <div className='icon' id='navbar-logo'><a href='/'></a></div>
           <div className='hide-small' id='navbar-nav'>
-            <a className='navbar-nav-default' href="#">How It Works</a>
+            <a className='navbar-nav-default' href="#section-process">How It Works</a>
             <a className='navbar-nav-default' href="#">Login</a>
             <a className='navbar-nav-special' href="#">Pre-Order</a>
           </div>

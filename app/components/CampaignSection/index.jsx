@@ -20,29 +20,21 @@ export default class CampaignSection extends React.Component {
             <a className='button' href="#"><span className='icon'></span>Yes, I Want To Support Optonaut</a>
           </div>
           <div className='row' id='section-campaign-rewards'>
-            <div className='one-third column'>
-              <div className='section-campaign-reward-price'>5$</div>
-              <div className='section-campaign-reward-info'>
-                <div className='section-campaign-reward-title'>VR Glasses</div>
-                <div className='section-campaign-reward-status'>3453/5000 left</div>
-              </div>
-              <div className='section-campaign-reward-image'><img src={require('../../assets/images/cardboard.png')} /></div>
-            </div>
-            <div className='one-third column'>
-              <div className='section-campaign-reward-price'>5$</div>
-              <div className='section-campaign-reward-info'>
-                <div className='section-campaign-reward-title'>VR Glasses</div>
-                <div className='section-campaign-reward-status'>3453/5000 left</div>
-              </div>
-              <div className='section-campaign-reward-image'><img src={require('../../assets/images/hardware2.png')} /></div>
-            </div>
-            <div className='one-third column'>
+            <div>
               <div className='section-campaign-reward-price'>5$</div>
               <div className='section-campaign-reward-info'>
                 <div className='section-campaign-reward-title'>VR Glasses</div>
                 <div className='section-campaign-reward-status'>3453/5000 left</div>
               </div>
               <div className='section-campaign-reward-image'><img src={require('../../assets/images/hardware3.png')} /></div>
+            </div>
+            <div>
+              <div className='section-campaign-reward-price'>5$</div>
+              <div className='section-campaign-reward-info'>
+                <div className='section-campaign-reward-title'>VR Glasses</div>
+                <div className='section-campaign-reward-status'>3453/5000 left</div>
+              </div>
+              <div className='section-campaign-reward-image'><img src={require('../../assets/images/hardware2.png')} /></div>
             </div>
           </div>
         </div>
