@@ -25,7 +25,7 @@ export default class HardwareSection extends React.Component {
             </div>
           </div>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <strong>text ever since the 1500s,</strong> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.</p>
-          <a className='button' href="#">Pre-Order Full Hardware Set</a>
+          <a className='button' href="#"><span className='icon'></span>Pre-Order Full Hardware Set</a>
           <br/>
           <br/>
         </div>
