@@ -42,7 +42,13 @@ export default class MapSection extends React.Component {
         </div>
         <div id='section-map-invite'>
           <div className='container'>
-            <a className='button inverse' href="#"><span className='icon'></span>Request Invite</a>
+            <div className='one-half column' id='section-map-invite-stores'>
+              <img src={require('../../assets/images/appstore.png')} title='Coming soon' />
+              <img src={require('../../assets/images/playstore.png')} title='Coming soon' />
+            </div>
+            <div className='one-half column' id='section-map-invite-button'>
+              <a className='button inverse' href="#"><span className='icon'></span>Request Invite For App</a>
+            </div>
           </div>
         </div>
       </div>
