@@ -28,6 +28,7 @@
 #section-map-content {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 #section-map-phone {
@@ -35,7 +36,7 @@
   box-sizing: border-box;
   position: absolute;
   height: 87%;
-  left: 2%;
+  left: 6%;
   top: 6%;
   background: url('../../assets/images/iphone.svg') no-repeat;
   background-size: 100%;
@@ -49,3 +50,72 @@
   }
 }
 
+#section-map-pois {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+}
+
+#section-map-pois-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  div {
+    height: 8px;
+    width: 8px;
+    border: 6px #ec8c82 solid;
+    border-radius: 50%;
+    background: @red;
+    position: absolute;
+    margin: -7px;
+
+    &.active {
+      margin: -10px;
+      height: 12px;
+      width: 12px;
+      border: 9px #ec8c82 solid;
+    }
+  }
+
+  div:nth-child(1) {
+    top: 1%;
+    left: 0;
+  }
+
+  div:nth-child(2) {
+    top: -6%;
+    left: 4%;
+  }
+
+  div:nth-child(3) {
+    top: -13%;
+    left: 6%;
+  }
+
+  div:nth-child(4) {
+    top: 12%;
+    left: 7%;
+  }
+
+  div:nth-child(5) {
+    top: 22%;
+    left: 20%;
+  }
+
+  div:nth-child(6) {
+    top: 29%;
+    left: 40%;
+  }
+}
+
+#section-map-invite {
+  width: 100%;
+  background: @red;
+  
+  a {
+    margin: 2rem auto;
+  }
+}
