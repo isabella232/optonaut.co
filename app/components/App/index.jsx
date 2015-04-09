@@ -7,6 +7,7 @@ import CampaignSection from '../CampaignSection';
 import FeaturesSection from '../FeaturesSection';
 import HardwareSection from '../HardwareSection';
 import ProcessSection from '../ProcessSection';
+import MapSection from '../MapSection';
 import FaqSection from '../FaqSection';
 import ContactSection from '../ContactSection';
 import Footer from '../Footer';
@@ -23,6 +24,7 @@ export default class App extends React.Component {
         <FeaturesSection/>
         <HardwareSection/>
         <ProcessSection/>
+        <MapSection/>
         <FaqSection/>
         <ContactSection/>
         <Footer/>

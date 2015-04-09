@@ -23,6 +23,7 @@
     "normalize.css": "^3.0.3",
     "react": "^0.13.1",
     "react-youtube": "^3.0.1",
+    "responsive-nav": "1.0.32",
     "skeleton-less": "^2.0.1"
   },
   "devDependencies": {

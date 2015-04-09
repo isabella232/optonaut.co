@@ -1,0 +1,51 @@
+@import "../../common.less";
+
+#section-map {
+  width: 100%;
+  float: left;
+}
+
+#section-map-wrapper {
+  width: 100%;
+  height: 610px;
+  background: url('../../assets/images/map.jpg');
+  background-size: auto 100%;
+  background-position: center;
+
+  @media (max-width: 749px) {
+    height: 500px;
+  }
+
+  @media (max-width: 549px) {
+    height: 400px;
+  }
+
+  @media (max-width: 449px) {
+    height: 300px;
+  }
+}
+
+#section-map-content {
+  position: relative;
+  height: 100%;
+}
+
+#section-map-phone {
+  overflow: visible;
+  box-sizing: border-box;
+  position: absolute;
+  height: 87%;
+  left: 2%;
+  top: 6%;
+  background: url('../../assets/images/iphone.svg') no-repeat;
+  background-size: 100%;
+
+  img {
+    width: auto;
+    height: 100%;
+    display: block;
+    padding: 24.6% 7.6% 25% 6.6%;
+    box-sizing: border-box;
+  }
+}
+

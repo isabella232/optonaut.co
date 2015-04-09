@@ -9,7 +9,7 @@ export default class FaqSection extends React.Component {
     return (
       <div id='section-faq'>
         <div className='container' id='section-faq-content'>
-          <h2>FAQ</h2>
+          <h2>We Got Your Answers</h2>
           <div className='row'>
             <div className='one-half column'>
               <strong>Which smartphones support <span className='beem'>Beem</span>?</strong><br/> So far we have tested it successfully on all IPhones newer than 4S and all Nexus newer than 4.
