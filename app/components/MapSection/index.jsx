@@ -19,6 +19,7 @@ export default class MapSection extends React.Component {
                 <div></div>
                 <div></div>
                 <div></div>
+                <div></div>
               </div>
             </div>
           </div>

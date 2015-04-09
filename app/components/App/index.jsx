@@ -18,12 +18,6 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <NavBar/>
-        <HomeSection/>
-        <CampaignSection/>
-        <FeaturesSection/>
-        <HardwareSection/>
-        <ProcessSection/>
         <MapSection/>
         <FaqSection/>
         <ContactSection/>
