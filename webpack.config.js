@@ -1,8 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var autoprefixer = require('autoprefixer-core');
 
 module.exports = {
-    entry: './app',
+    entry: './app/client.jsx',
     output: {
         path: './build',
         filename: 'bundle.[hash].js',
@@ -23,7 +22,7 @@ module.exports = {
             loader: 'style!css'
         }, {
             test: /\.less$/,
-            loader: 'style!css!postcss!less'
+            loader: 'style!css!autoprefixer!less'
         }, {
             test: /\.jsx$/,
             exclude: /node_modules/,
@@ -36,12 +35,7 @@ module.exports = {
             loader: 'url?limit=100000'
         }]
     },
-    postcss: [autoprefixer({
-        browsers: ['last 2 version']
-    })],
-    plugins: [new HtmlWebpackPlugin({
-        template: 'index.html'
-    })],
+    plugins: [new HtmlWebpackPlugin()],
     resolve: {
         extensions: ['', '.js', '.jsx']
     }

@@ -1,5 +1,6 @@
 'use strict';
 
+import { Link } from 'react-router';
 import React from 'react';
 
 require('./index.less');
@@ -40,7 +41,7 @@ export default class Footer extends React.Component {
           <div>
             <h5>Legal</h5>
             <ul>
-              <li><a href='#'>Imprint</a></li>
+              <li><Link to='legal-imprint'>Imprint</Link></li>
               <li><a href='#'>Contact</a></li>
               <li><a href='#'>Terms</a></li>
             </ul>

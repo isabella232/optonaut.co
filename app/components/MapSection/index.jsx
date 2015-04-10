@@ -24,6 +24,10 @@ export default class MapSection extends React.Component {
     }.bind(this), 4300);
   }
 
+  componentWillUnmount() {
+    clearInterval(interval);
+  }
+
   selectPoint(i) {
     this.setState({ activePoint: i });
     clearInterval(interval);
@@ -31,7 +35,7 @@ export default class MapSection extends React.Component {
 
   render() {
     const activePoint = this.state.activePoint;
-    const pois = _.range(numPoints).map(i => <div className={i === activePoint ? 'active' : ''} onClick={this.selectPoint.bind(this, i)}></div>);
+    const pois = _.range(numPoints).map(i => <div key={i} className={i === activePoint ? 'active' : ''} onClick={this.selectPoint.bind(this, i)}></div>);
     return (
       <div id='section-map'>
         <div id='section-map-wrapper'>
