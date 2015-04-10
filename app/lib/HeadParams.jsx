@@ -2,9 +2,9 @@
 //var $ = require('jquery');
 //var $ = function() {};
 
-//var isClient = function() {
-  //return typeof window !== 'undefined';
-//};
+var isClient = function() {
+  return typeof window !== 'undefined' && 'document' in window;
+};
 
 /**
  * Contains parameters for the <HEAD> that will be examined when the <HEAD> is
@@ -21,18 +21,14 @@ var HeadParams = function(title, description) {
 HeadParams.prototype.setTitle = function(title) {
   this.title = title;
 
-  //if (isClient()) {
-    //$('head > title').text(title);
-  //}
+  if (isClient()) {
+    document.title = title;
+  }
 };
 
 /** Sets content for the description meta tag */
 HeadParams.prototype.setDescription = function(description) {
   this.description = description;
-
-  //if (isClient()) {
-    //$('head > meta[name=description]').attr('content', description);
-  //}
 };
 
 module.exports = HeadParams;

@@ -7,7 +7,7 @@ import Routes from './components/Routes';
 
 let headParams = new HeadParams();
 
-Router.run(Routes, Router.RefreshLocation, function (Handler, state) {
+Router.run(Routes, Router.HistoryLocation, function(Handler, state) {
   let bodyElement = React.createFactory(Handler)({
     params: state.params,
     headParams: headParams,

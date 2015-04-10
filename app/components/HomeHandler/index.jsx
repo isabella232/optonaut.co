@@ -9,10 +9,17 @@ import ProcessSection from '../ProcessSection';
 import MapSection from '../MapSection';
 import FaqSection from '../FaqSection';
 import ContactSection from '../ContactSection';
+import HeadParams from '../../lib/HeadParams';
 
 require('./index.less');
 
-export default class App extends React.Component {
+export default class HomeHandler extends React.Component {
+
+  componentWillMount() {
+    this.props.headParams.setTitle('Optonaut - Virtual Reality Photography');
+    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.');
+  }
+
   render() {
     return (
       <div>
@@ -28,3 +35,7 @@ export default class App extends React.Component {
     );
   }
 }
+
+HomeHandler.propTypes = {
+    headParams: React.PropTypes.instanceOf(HeadParams).isRequired
+};

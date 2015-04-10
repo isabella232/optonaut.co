@@ -30,7 +30,7 @@ export default class Html extends React.Component {
 }
 
 Html.propTypes = {
-    headParams: React.PropTypes.instanceOf(HeadParams),
+    headParams: React.PropTypes.instanceOf(HeadParams).isRequired,
     scriptHash: React.PropTypes.string.isRequired,
     markup: React.PropTypes.string.isRequired
 };

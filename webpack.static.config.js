@@ -1,9 +1,9 @@
-var React = require('react');
+'use strict';
+
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-//var StaticTools = require('./app/lib/StaticTools');
 
 function gather(routes, parentPath) {
     var result = [];
@@ -47,14 +47,10 @@ function writeHtmlPage(fileName, html) {
 }
 
 function injectHtmlPlugin() {
-    global.window = {
-        addEventListener: function() {}
-    };
-
     this.plugin('emit', function(compilation, cb) {
+        global.window = {}; // mock window
         var app = require('./build/prerender');
         var webpackStatsJson = compilation.getStats().toJson();
-        //var paths = StaticTools.gather(app.routes);
         var scriptHash = webpackStatsJson.hash;
         console.log(scriptHash);
         var paths = gather(app.routes);
@@ -72,9 +68,9 @@ function injectHtmlPlugin() {
     });
 }
 
-var m = require('./webpack.config');
+var config = require('./webpack.config');
 
-m.plugins = [injectHtmlPlugin];
+config.plugins = [injectHtmlPlugin];
 
 module.exports = [{
         entry: './app/static.jsx',
@@ -113,5 +109,5 @@ module.exports = [{
             extensions: ['', '.js', '.jsx']
         }
     },
-    m
+    config
 ];
