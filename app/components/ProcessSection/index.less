@@ -22,14 +22,22 @@
 #section-process-list {
   font-weight: 500;
   padding: 0 0 3rem;
+  display: flex;
+
+  & > div {
+    max-width: 30%;
+    line-height: 1.4;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
 }
 
 #section-process-feature1, #section-process-feature2, #section-process-feature3 {
-  width: 4rem;
-  height: 4rem;
-  position:relative;
-  z-index:3;
-  margin: 4.2rem auto 0.7rem;
+  flex-grow: 1;
+  width: 3.2rem;
+  height: 3.2rem;
+  position: relative;
+  margin: 3.36rem auto 0.56rem;
 
   &.active {
     img:nth-child(1) {
@@ -43,17 +51,17 @@
 
   img:nth-child(1) {
     position: absolute;
-    width: 4rem;
+    width: 3.2rem;
     height: auto;
-    left: -0.6rem;
-    top: -2.2rem;
+    left: -0.48rem;
+    top: -1.76rem;
   }
 
   img:nth-child(2) {
     position: absolute;
-    top: 1.09rem;
-    left: 1.52rem;
-    width: 3rem;
+    top: 0.95rem;
+    left: 1.39rem;
+    width: 1.92rem;
     height: auto;
   }
 }

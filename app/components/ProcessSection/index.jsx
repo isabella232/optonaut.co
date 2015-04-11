@@ -4,7 +4,7 @@ import React from 'react';
 
 require('./index.less');
 
-const numSteps = 3;
+const numSteps = 4;
 let interval;
 
 export default class ProcessSection extends React.Component {

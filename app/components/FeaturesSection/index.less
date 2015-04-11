@@ -20,13 +20,22 @@
 }
 
 #section-features-list {
-    font-weight: 500;
-    padding: 0 0 3rem;
+  font-weight: 500;
+  padding: 0 0 3rem;
+  display: flex;
 
-    .icon {
-      font-size: 4rem;
-      margin: 1.3rem 0 0.7rem;
-    }
+  & > div {
+    max-width: 30%;
+    line-height: 1.4;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    flex-grow: 1;
+    font-size: 4rem;
+    margin: 1.3rem 0 1.2rem;
+  }
 }
 
 #section-features-feature1:before {
