@@ -20,12 +20,13 @@
   "homepage": "https://github.com/optonaut/homepage",
   "dependencies": {
     "axios": "^0.5.2",
+    "classnames": "^1.2.0",
+    "fastclick": "^1.0.6",
     "lodash": "^3.6.0",
     "normalize.css": "^3.0.3",
     "react": "^0.13.1",
     "react-router": "^0.13.2",
     "react-youtube": "^3.0.1",
-    "responsive-nav": "1.0.32",
     "skeleton-less": "^2.0.1"
   },
   "devDependencies": {

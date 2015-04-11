@@ -35,7 +35,9 @@ module.exports = {
             loader: 'url?limit=100000'
         }]
     },
-    plugins: [new HtmlWebpackPlugin()],
+    plugins: [new HtmlWebpackPlugin({
+        template: 'index.html'
+    })],
     resolve: {
         extensions: ['', '.js', '.jsx']
     }
