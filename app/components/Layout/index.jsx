@@ -6,13 +6,17 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 import HeadParams from '../../lib/HeadParams';
 
+require('./index.less');
+
 export default class Layout extends React.Component {
 
   render() {
     return (
       <div>
         <NavBar/>
-        <RouteHandler headParams={this.props.headParams}/>
+        <div id='content'>
+          <RouteHandler headParams={this.props.headParams}/>
+        </div>
         <Footer/>
       </div>
     );

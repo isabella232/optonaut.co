@@ -13,21 +13,20 @@ export default class HardwareSection extends React.Component {
           <div className='row' id='section-hardware-list'>
             <div className='one-third column'>
               <img src={require('../../assets/images/hardware1.png')} />
-              <span>An Optocam</span>
+              <span>Our Optoboard</span>
             </div>
             <div className='one-third column'>
               <img src={require('../../assets/images/hardware2.png')} />
-              <span>Your Smartphone</span>
+              <span>Your Smartphone*</span>
             </div>
             <div className='one-third column'>
               <img src={require('../../assets/images/hardware3.png')} />
-              <span>Virtual Reality Glasses</span>
+              <span>Some VR Glasses</span>
             </div>
           </div>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <strong>text ever since the 1500s,</strong> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.</p>
           <a className='button' href="#"><span className='icon'></span>Pre-Order Full Hardware Set</a>
-          <br/>
-          <br/>
+          <div id='section-hardware-explanation'>* Some lousy explanation</div>
         </div>
       </div>
     );
