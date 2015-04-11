@@ -13,30 +13,50 @@
   h2 {
     margin: 3rem 0 1rem;
   }
-  
+
   p {
     margin-bottom: 1.5rem;
   }
 }
 
 #section-process-list {
-    font-weight: 500;
-    padding: 0 0 3rem;
+  font-weight: 500;
+  padding: 0 0 3rem;
+}
 
-    .icon {
-      font-size: 4rem;
-      margin: 1.3rem 0 0.7rem;
+#section-process-feature1, #section-process-feature2, #section-process-feature3 {
+  width: 4rem;
+  height: 4rem;
+  position:relative;
+  z-index:3;
+  margin: 4.2rem auto 0.7rem;
+
+  &.active {
+    img:nth-child(1) {
+      animation: spin-big 4s linear infinite;
     }
+
+    img:nth-child(2) {
+      animation: spin-small 2.4s linear infinite;
+    }
+  }
+
+  img:nth-child(1) {
+    position: absolute;
+    width: 4rem;
+    height: auto;
+    left: -0.6rem;
+    top: -2.2rem;
+  }
+
+  img:nth-child(2) {
+    position: absolute;
+    top: 1.09rem;
+    left: 1.52rem;
+    width: 3rem;
+    height: auto;
+  }
 }
 
-#section-process-feature1:before {
-  content: "\e90f";
-}
-
-#section-process-feature2:before {
-  content: "\e983";
-}
-
-#section-process-feature3:before {
-  content: "\e600";
-}
+@keyframes spin-big { 100% { transform: rotate(360deg); } }
+@keyframes spin-small { 100% { transform: rotate(-360deg); } }
