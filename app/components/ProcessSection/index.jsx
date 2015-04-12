@@ -31,8 +31,9 @@ export default class ProcessSection extends React.Component {
     return (
       <div id='section-process'>
         <div className='container' id='section-process-content'>
-          <h2>Our Process Is Simple</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <strong>text ever since the 1500s,</strong> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.</p>
+          <h2>Creating VR Easily</h2>
+          <p>Put two smartphones in an Optocam and use the Optonaut App to create your 3d panorama. Follow the intuitive instructions and record as if you were taking ordinary panoramas. Our servers will do the rest and you get a brand-new Optograph to share with your friends and family.
+</p>
           <div className='row' id='section-process-list'>
             <div className='one-third column'>
               <div className={this.state.activeStep === 0 ? 'active' : ''} id='section-process-feature1'>
