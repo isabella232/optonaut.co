@@ -1,3 +1,5 @@
+@import "../../common.less";
+
 #content {
   background: #fff;
   width: 100%;
@@ -7,4 +9,51 @@
   @media (max-width: 749px) {
     margin-top: 60px;
   }
+
+  a {
+    color: @red;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px @red solid;
+    }
+  }
 }
+
+.button {
+  background: @red !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  padding: 0.56rem 0.8rem !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  height: auto !important;
+  text-transform: none !important;
+  font-size: 1em !important;
+  letter-spacing: 0 !important;
+  width: 100% !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+
+  &:hover {
+    color: @red !important;
+    background: #fff !important;
+    padding: ~"calc(0.56rem - 3px) calc(0.8rem - 3px)" !important;
+    border: 3px @red solid !important;
+  }
+
+  &.inverse {
+    color: @red !important;
+    background: #fff !important;
+
+    &:hover {
+      color: #fff !important;
+      background: @red !important;
+      border-color: #fff !important;
+    }
+  }
+}
+
