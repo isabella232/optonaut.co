@@ -143,8 +143,9 @@
   a {
     padding-right: 1rem;
     display: inline-block;
-    margin: auto 0.8rem;
+    margin: auto;
     flex-grow: 1;
+    width: 70%;
 
     &:last-child {
       padding-right: 0;

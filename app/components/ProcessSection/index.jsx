@@ -31,7 +31,7 @@ export default class ProcessSection extends React.Component {
     return (
       <div id='section-process'>
         <div className='container' id='section-process-content'>
-          <h2>Virtual Reality In Three Steps</h2>
+          <h2>Our Process Is Simple</h2>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <strong>text ever since the 1500s,</strong> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.</p>
           <div className='row' id='section-process-list'>
             <div className='one-third column'>

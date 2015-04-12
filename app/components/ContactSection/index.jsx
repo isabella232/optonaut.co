@@ -64,7 +64,7 @@ export default class ContactSection extends React.Component {
     return (
       <div id='section-contact'>
         <div className='container' id='section-contact-content'>
-          <h2>Let Us Know What You Think</h2>
+          <h2>Tell Us What You Think</h2>
           {content}
         </div>
       </div>
