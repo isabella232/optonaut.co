@@ -13,6 +13,7 @@
   a {
     color: @red;
     text-decoration: none;
+    /*font-weight: 500;*/
 
     &:hover {
       border-bottom: 1px @red solid;
@@ -20,38 +21,36 @@
   }
 }
 
-.button {
-  background: @red !important;
+.big-button {
+  display: inline-block;
+  background: @red;
   color: #fff !important;
-  font-weight: 700 !important;
-  padding: 0.56rem 0.8rem !important;
-  cursor: pointer !important;
-  text-align: center !important;
-  box-sizing: border-box !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  height: auto !important;
-  text-transform: none !important;
-  font-size: 1em !important;
-  letter-spacing: 0 !important;
-  width: 100% !important;
-  line-height: 1.6 !important;
-  margin: 0 !important;
+  font-weight: 700;
+  padding: 0.56rem 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  width: 100%;
+  margin: 0;
 
   &:hover {
     color: @red !important;
-    background: #fff !important;
-    padding: ~"calc(0.56rem - 3px) calc(0.8rem - 3px)" !important;
+    background: #fff;
+    padding: ~"calc(0.56rem - 3px) calc(0.8rem - 3px)";
     border: 3px @red solid !important;
   }
 
   &.inverse {
     color: @red !important;
-    background: #fff !important;
+    background: #fff;
 
     &:hover {
       color: #fff !important;
-      background: @red !important;
+      background: @red;
       border-color: #fff !important;
     }
   }

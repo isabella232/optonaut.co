@@ -2,6 +2,7 @@
 
 import React from 'react';
 import _ from 'lodash';
+import RequestInviteForm from '../RequestInviteForm';
 
 require('./index.less');
 
@@ -13,6 +14,7 @@ export default class MapSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      showInviteForm: false,
       activePoint: 0
     };
   }
@@ -33,7 +35,30 @@ export default class MapSection extends React.Component {
     clearInterval(interval);
   }
 
+  showInviteForm() {
+    this.setState({ showInviteForm: true });
+  }
+
   render() {
+    let foot;
+    if (this.state.showInviteForm) {
+      foot = (
+        <RequestInviteForm buttonClassName='inverse'/>
+      );
+    } else {
+      foot = (
+        <div>
+          <div className='one-half column' id='section-map-invite-stores'>
+            <img src={require('../../assets/images/appstore.png')} title='Coming soon' />
+            <img src={require('../../assets/images/playstore.png')} title='Coming soon' />
+          </div>
+          <div className='one-half column' id='section-map-invite-button'>
+            <div className='big-button inverse' onClick={this.showInviteForm.bind(this)}><span className='icon'></span>Request Invite For App</div>
+          </div>
+        </div>
+      );
+    }
+
     const activePoint = this.state.activePoint;
     const pois = _.range(numPoints).map(i => <div key={i} className={i === activePoint ? 'active' : ''} onClick={this.selectPoint.bind(this, i)}></div>);
     return (
@@ -47,15 +72,7 @@ export default class MapSection extends React.Component {
           </div>
         </div>
         <div id='section-map-invite'>
-          <div className='container'>
-            <div className='one-half column' id='section-map-invite-stores'>
-              <img src={require('../../assets/images/appstore.png')} title='Coming soon' />
-              <img src={require('../../assets/images/playstore.png')} title='Coming soon' />
-            </div>
-            <div className='one-half column' id='section-map-invite-button'>
-              <a className='button inverse' href="#"><span className='icon'></span>Request Invite For App</a>
-            </div>
-          </div>
+          <div className='container'>{foot}</div>
         </div>
       </div>
     );

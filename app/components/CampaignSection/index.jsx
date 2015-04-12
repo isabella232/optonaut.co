@@ -17,7 +17,7 @@ export default class CampaignSection extends React.Component {
             <span id='section-campaign-author'>Johannes Schickling, Co-Founder<img id='section-campaign-head' src={require('../../assets/images/face.jpg')} /></span>
           </div>
           <div id='section-campaign-button'>
-            <a className='button' href="#"><span className='icon'></span>Yes, I Want To Support Optonaut</a>
+            <a className='big-button' href="#"><span className='icon'></span>Yes, I Want To Support Optonaut</a>
           </div>
         </div>
         <div id='section-campaign-press'>

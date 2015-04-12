@@ -54,7 +54,7 @@ export default class ContactSection extends React.Component {
               <input className={this.state.invalidInput ? 'invalid' : ''} name='email' onKeyUp={this.watchForEnter.bind(this)} placeholder='Email (optional)' ref='email' type='email' />
             </div>
             <div className='one-half column'>
-              <div className='button inverse' onClick={this.submit.bind(this)}>Send Message</div>
+              <div className='big-button inverse' onClick={this.submit.bind(this)}>Send Message</div>
             </div>
           </div>
         </div>
