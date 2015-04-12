@@ -25,9 +25,9 @@ export default class Footer extends React.Component {
           <div>
             <h5>About</h5>
             <ul>
-              <li><a href='#'>Team</a></li>
-              <li><a href='#'>Blog</a></li>
-              <li><a href='#'>Press</a></li>
+              <li><Link to='about-team'>Team</Link></li>
+              <li><Link to='about-team'>Blog</Link></li>
+              <li><Link to='about-press'>Press</Link></li>
             </ul>
           </div>
           <div>

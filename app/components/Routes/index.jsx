@@ -5,6 +5,8 @@ import { Route, DefaultRoute, NotFoundRoute } from 'react-router';
 import Layout from '../Layout';
 import HomeHandler from '../HomeHandler';
 import LoginHandler from '../LoginHandler';
+import TeamHandler from '../about/TeamHandler';
+import PressHandler from '../about/PressHandler';
 import ImprintHandler from '../legal/ImprintHandler';
 import NotFoundHandler from '../NotFoundHandler';
 
@@ -12,6 +14,8 @@ var routes = (
   <Route name='appBody' path='/' handler={Layout}>
     <DefaultRoute name='home' handler={HomeHandler}/>
     <Route name='login' path='login/' handler={LoginHandler}/>
+    <Route name='about-team' path='about/team/' handler={TeamHandler}/>
+    <Route name='about-press' path='about/press/' handler={PressHandler}/>
     <Route name='legal-imprint' path='legal/imprint/' handler={ImprintHandler}/>
     <NotFoundRoute name='not-found' handler={NotFoundHandler}/>
   </Route>
