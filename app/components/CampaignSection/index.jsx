@@ -13,7 +13,7 @@ export default class CampaignSection extends React.Component {
             <h2>We Are On Kickstarter</h2>
           </div>
           <div id='section-campaign-cite'>
-            <p>By now you already can consume Virtual Reality content. The next big step is to create VR content as well. <strong>Let's achieve this goal together.</strong>.</p>
+            <p>By now you can already consume Virtual Reality content. The next big step is to create VR content as well. <strong>Let's achieve this goal together.</strong>.</p>
             <span id='section-campaign-author'>Johannes Schickling, Co-Founder<img id='section-campaign-head' src={require('../../assets/images/face.jpg')} /></span>
           </div>
           <div id='section-campaign-button'>
