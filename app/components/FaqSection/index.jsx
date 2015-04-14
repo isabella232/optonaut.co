@@ -9,10 +9,10 @@ export default class FaqSection extends React.Component {
     return (
       <div id='section-faq'>
         <div className='container' id='section-faq-content'>
-          <h2>We Got Your Answers</h2>
+          <h2>We Have Your Answers</h2>
           <div className='row'>
             <div className='one-half column'>
-              <strong>Why shoud I use Optonaut, I already got Instagram</strong><br/> In a few weeks, you will be able to order it on this website, to be first in line make sure to subscribe to our newsletter.
+              <strong>Why shoud I use Optonaut, I already have Instagram</strong><br/> In a few weeks, you will be able to order it on this website, to be first in line make sure to subscribe to our newsletter.
             </div>
             <div className='one-half column'>
               <strong>So what's the difference to panorama images?</strong><br/>Because we work with two different photo spheres, one for each eye, we are able to provide you with a depth experience standard 2D pictures simply cannot provide.
