@@ -29,7 +29,7 @@ export default class HomeHandler extends React.Component {
         <CampaignSection/>
         <FeaturesSection/>
         <MapSection/>
-        <HardwareSection/>
+        {/*<HardwareSection/>*/}
         <ProcessSection/>
         <ProfessionellSection/>
         <FaqSection/>

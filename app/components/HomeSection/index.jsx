@@ -38,7 +38,7 @@ export default class HomeSection extends React.Component {
     } else {
       foot = (
         <div className='container' id='section-home-foot-wrapper'>
-          <div id='section-home-foot-desc'>The Optonaut App is <strong>invite only</strong> at this stage. Request an invite to get <strong>early access</strong>.</div>
+          <div id='section-home-foot-desc'>Optonaut is <strong>invite only</strong> at this stage. Request an invite to get <strong>early access</strong>.</div>
           <div className='big-button' id='section-home-foot-button' onClick={this.showInviteForm.bind(this)}>Request Invite</div>
         </div>
       );

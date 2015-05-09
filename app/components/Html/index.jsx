@@ -17,7 +17,7 @@ export default class Html extends React.Component {
           <meta name='robots' />
           <meta name='viewport' content='initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0, width=device-width' />
 
-          <link rel='shortcut icon' type='image/png' href='/favicon.png' sizes='16x16 32x32 64x64' />
+          <link rel='shortcut icon' type='image/png' href='/favicon-32x32.png' sizes='32x32' />
           <link href='/style.css' media='all' rel='stylesheet' />
 
         </head>

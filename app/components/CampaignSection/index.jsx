@@ -21,14 +21,7 @@ export default class CampaignSection extends React.Component {
           </div>
         </div>
         <div id='section-campaign-press'>
-          <div className='container'>
-            <a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
-            <a href='#'><img src={require('../../assets/images/hackzurich.png')} /></a>
-            <a href='#'><img src={require('../../assets/images/eth.png')} /></a>
-            <a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
-            <a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
-            <a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
-          </div>
+          <br/>
         </div>
       </div>
     );
@@ -55,3 +48,16 @@ export default class CampaignSection extends React.Component {
               //<div className='section-campaign-reward-image'><img src={require('../../assets/images/hardware2.png')} /></div>
             //</div>
           //</div>
+
+
+
+        //<div id='section-campaign-press'>
+          //<div className='container'>
+            //<a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
+            //<a href='#'><img src={require('../../assets/images/hackzurich.png')} /></a>
+            //<a href='#'><img src={require('../../assets/images/eth.png')} /></a>
+            //<a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
+            //<a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
+            //<a href='#'><img src={require('../../assets/images/techcrunch.png')} /></a>
+          //</div>
+        //</div>
