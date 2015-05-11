@@ -2,11 +2,42 @@
 
 #section-process {
   width: 100%;
+  height: 519px;
   background: @grey;
   position: relative;
   float: left;
   color: #fff;
   text-align: center;
+
+  @media (max-width: 749px) {
+    height: 400px;
+  }
+}
+
+#section-process-bg {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  /*background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0)),*/
+              /*url(../../assets/images/home.jpg) no-repeat;*/
+  /*background-size: cover;*/
+}
+
+#section-process-bg video {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  @media (max-width: 1099px) {
+    width: auto;
+    height: 100%;
+  }
 }
 
 #section-process-content {
@@ -20,7 +51,6 @@
 }
 
 #section-process-list {
-  font-weight: 500;
   padding: 0 0 3rem;
   display: flex;
 
@@ -28,43 +58,22 @@
     max-width: 30%;
     line-height: 1.4;
     margin: 0 auto;
-    font-size: 0.8rem;
-  }
-}
+    flex-grow: 1;
+    position: relative;
+    margin: 1rem auto;
+    font-weight: 300;
 
-#section-process-feature1, #section-process-feature2, #section-process-feature3 {
-  flex-grow: 1;
-  width: 3.2rem;
-  height: 3.2rem;
-  position: relative;
-  margin: 3.36rem auto 0.56rem;
-
-  &.active {
-    img:nth-child(1) {
-      animation: spin-big 4s linear infinite;
+    &.active {
+      font-weight: 700;
     }
 
-    img:nth-child(2) {
-      animation: spin-small 2.4s linear infinite;
+    & > div {
+      font-size: 3rem;
+    }
+
+    & > span {
+      font-size: 0.8rem;
+      line-height: 1px;
     }
   }
-
-  img:nth-child(1) {
-    position: absolute;
-    width: 3.2rem;
-    height: auto;
-    left: -0.48rem;
-    top: -1.76rem;
-  }
-
-  img:nth-child(2) {
-    position: absolute;
-    top: 0.95rem;
-    left: 1.39rem;
-    width: 1.92rem;
-    height: auto;
-  }
 }
-
-@keyframes spin-big { 100% { transform: rotate(360deg); } }
-@keyframes spin-small { 100% { transform: rotate(-360deg); } }

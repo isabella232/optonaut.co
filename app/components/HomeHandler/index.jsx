@@ -31,7 +31,7 @@ export default class HomeHandler extends React.Component {
         <MapSection/>
         {/*<HardwareSection/>*/}
         <ProcessSection/>
-        <ProfessionellSection/>
+        {/*<ProfessionellSection/>*/}
         <FaqSection/>
         <ContactSection/>
       </div>
