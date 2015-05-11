@@ -15,14 +15,36 @@ export default class ContactSection extends React.Component {
     super(props);
     this.state = {
       invalidInput: false,
-      submitted: false
+      submitted: false,
+      loading: false
     };
   }
 
   submit() {
     const email = React.findDOMNode(this.refs.email).value;
+    const message = React.findDOMNode(this.refs.message).value;
     if (!email || validateEmail(email)) {
-      this.setState({ submitted: true });
+      this.setState({ loading: true });
+
+      var request = new XMLHttpRequest();
+      var url = 'https://api.parse.com/1/classes/message';
+
+      request.open('POST', url, true);
+      request.setRequestHeader('Content-Type', 'application/json');
+      request.setRequestHeader('X-Parse-Application-Id', 'z17SUVXKL2JqHShB3jMSjphyMqPiCZ9nqTX7Fn7M');
+      request.setRequestHeader('X-Parse-REST-API-Key', 'f3uFeCxiRQkgDWMYmMEGinF53VpIffhg1m5jWgdu');
+
+      request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+          this.setState({ submitted: true });
+        }
+
+        this.setState({ loading: false });
+
+      }.bind(this);
+
+      var data = JSON.stringify({ email, message });
+      request.send(data);
     } else {
       this.setState({ invalidInput: true });
       setTimeout(function() {
@@ -39,7 +61,11 @@ export default class ContactSection extends React.Component {
 
   render() {
     let content;
-    if (this.state.submitted) {
+    if (this.state.loading) {
+      content = (
+        <p><strong>Hold on.</strong></p>
+      );
+    } else if (this.state.submitted) {
       content = (
         <p><strong>Thanks for your message.</strong> We will get back to you as soon as possible.</p>
       );
@@ -47,7 +73,7 @@ export default class ContactSection extends React.Component {
       content = (
         <div id='section-contact-form'>
           <div className='row'>
-            <textarea placeholder='Do you have any questions?'></textarea>
+            <textarea ref='message' placeholder='Do you have any questions?'></textarea>
           </div>
           <div className='row'>
             <div className='one-half column'>

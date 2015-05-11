@@ -15,7 +15,8 @@ export default class RequestInviteForm extends React.Component {
     super(props);
     this.state = {
       invalidInput: false,
-      submitted: false
+      submitted: false,
+      loading: false
     };
   }
 
@@ -32,7 +33,28 @@ export default class RequestInviteForm extends React.Component {
   submitInviteRequest() {
     const email = React.findDOMNode(this.refs.email).value;
     if (email && validateEmail(email)) {
-      this.setState({ submitted: true });
+      this.setState({ loading: true });
+
+      var request = new XMLHttpRequest();
+      var url = 'https://api.parse.com/1/classes/invite';
+
+      request.open('POST', url, true);
+      request.setRequestHeader('Content-Type', 'application/json');
+      request.setRequestHeader('X-Parse-Application-Id', 'z17SUVXKL2JqHShB3jMSjphyMqPiCZ9nqTX7Fn7M');
+      request.setRequestHeader('X-Parse-REST-API-Key', 'f3uFeCxiRQkgDWMYmMEGinF53VpIffhg1m5jWgdu');
+
+      request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+          this.setState({ submitted: true });
+        }
+
+        this.setState({ loading: false });
+
+      }.bind(this);
+
+      var data = JSON.stringify({ email });
+      request.send(data);
+
     } else {
       this.setState({ invalidInput: true });
       setTimeout(function() {
@@ -42,7 +64,13 @@ export default class RequestInviteForm extends React.Component {
   }
 
   render() {
-    if (this.state.submitted) {
+    if (this.state.loading) {
+      return (
+        <div className='container request-invite-wrapper'>
+          <div className='request-invite-message'><strong>Hold on.</strong></div>
+        </div>
+      );
+    } else if (this.state.submitted) {
       return (
         <div className='container request-invite-wrapper'>
           <div className='request-invite-message'>Good News. We added you to our waiting list. <strong>You will get a notification email soon.</strong></div>
