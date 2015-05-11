@@ -36,7 +36,7 @@ export default class TeamHandler extends React.Component {
               <ul>
                 <li>Graduated CS</li>
                 <li>BSc Thesis at CMU</li>
-                <li>Codes C since he was 14</li>
+                <li>Codes C since he is 14</li>
                 <li>Loves taking pictures</li>
               </ul>
             </div>
@@ -50,7 +50,7 @@ export default class TeamHandler extends React.Component {
               <img className='team-image' src={require('../../../assets/images/team_lisa.jpg')} /><br/>
                 <strong>Elisaweta Masserova</strong>
               <ul>
-                <li>Studys CS</li>
+                <li>Studies CS</li>
                 <li>Loves math</li>
                 <li>Security researcher</li>
                 <li>Invincible DOTA player</li>
