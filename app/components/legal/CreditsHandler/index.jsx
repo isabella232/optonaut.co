@@ -13,7 +13,13 @@ export default class CreditsHandler extends React.Component {
   render() {
     return (
       <div>
-        Thanks for the pictures...
+        Image Credits: <br />
+        Flickr/Shannon McClean,
+        <a href='https://www.flickr.com/photos/freekorps/9810411165'>Yosemite Little World</a><br />
+        Flickr/eggysayoga,
+        <a href='https://www.flickr.com/photos/eggysayoga/10536227836'>Beach Ball Indonesia</a><br />
+        Flickr/Mantis of Destiny,
+        <a href='https://www.flickr.com/photos/mantisofdestiny/3315470653'>Argentina Desert</a>
       </div>
     );
   }
