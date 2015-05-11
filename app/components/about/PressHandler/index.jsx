@@ -17,6 +17,7 @@ export default class PressHandler extends React.Component {
       <div id='press'>
         <div className='container' id='press-content'>
           <h3>Press</h3>
+          <p>You can download our press-kit <a href='http://static.optonaut.io.s3.amazonaws.com/presskit.zip'>here</a>.</p>
         </div>
       </div>
     );

@@ -8,6 +8,7 @@ import LoginHandler from '../LoginHandler';
 import TeamHandler from '../about/TeamHandler';
 import PressHandler from '../about/PressHandler';
 import ImprintHandler from '../legal/ImprintHandler';
+import CreditsHandler from '../legal/CreditsHandler';
 import NotFoundHandler from '../NotFoundHandler';
 
 var routes = (
@@ -17,6 +18,7 @@ var routes = (
     <Route name='about-team' path='about/team/' handler={TeamHandler}/>
     <Route name='about-press' path='about/press/' handler={PressHandler}/>
     <Route name='legal-imprint' path='legal/imprint/' handler={ImprintHandler}/>
+    <Route name='legal-credits' path='legal/credits/' handler={CreditsHandler}/>
     <NotFoundRoute name='not-found' handler={NotFoundHandler}/>
   </Route>
 );
