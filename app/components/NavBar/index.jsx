@@ -51,7 +51,7 @@ export default class NavBar extends React.Component {
           <div id='navbar-nav'>
             <a className='navbar-nav-default' href="/#section-process">How It Works</a>
             <Link to='login' className='navbar-nav-default'>Login</Link>
-            <a className='navbar-nav-special' href="#">I Want This</a>
+            <a className='navbar-nav-special' href="https://www.kickstarter.com/projects/optonaut/1701213790?token=70cd4c88">I Want This</a>
           </div>
           <div onClick={this._toggleNav.bind(this)} className='show-small icon' id='navbar-menu'></div>
         </div>

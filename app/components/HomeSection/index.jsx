@@ -79,7 +79,7 @@ export default class HomeSection extends React.Component {
             <div className={this.state.showSpinner ? 'hide' : ''}>
               <YouTube onReady={this.hideSpinner.bind(this)}
                        opts={opts}
-                       url={'http://www.youtube.com/watch?v=pEkWlOYnS7A'}
+                       url={'http://www.youtube.com/watch?v=ok1bNOsGh60'}
               />
             </div>
           </div>
