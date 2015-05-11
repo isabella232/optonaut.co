@@ -1,6 +1,6 @@
 'use strict';
 
-var fs = require('fs');
+var fs = require('fs-extra');
 var mkdirp = require('mkdirp');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -68,9 +68,15 @@ function injectHtmlPlugin() {
     });
 }
 
+function copyAssets() {
+    this.plugin('emit', function(compilation, cb) {
+        fs.copy('./app/assets', './build', cb);
+    });
+}
+
 var config = require('./webpack.config');
 
-config.plugins = [injectHtmlPlugin];
+config.plugins = [injectHtmlPlugin, copyAssets];
 
 module.exports = [{
         entry: './app/static.jsx',
