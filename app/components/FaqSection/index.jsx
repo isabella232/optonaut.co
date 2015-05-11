@@ -13,13 +13,11 @@ export default class FaqSection extends React.Component {
           <div className='row'>
             <div className='one-half column'>
               <strong>What's the difference to other panorama apps?</strong><br/>
-              Optonaut records a scene in a stereographic way. That means you can view it in 3D, as if you were there.
-              You can not only look around, but also perceive depth and dimension.
+              Optonaut produces stereoscopic images. That means you can view your pictures in 3D. You can look around and get a sense of depth of the scene.
             </div>
             <div className='one-half column'>
               <strong>Does Optonaut work with my smartphone?</strong><br/>
-              Optonaut will work with most popular Android and iOS devices.
-              The minimum requirement is having a camera and orientation sensors.
+              Optonaut will work with most popular Android and iOS devices. The minimum requirement is having a camera and orientation sensors.
             </div>
           </div>
           <div className='row'>
