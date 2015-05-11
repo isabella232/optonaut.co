@@ -12,19 +12,23 @@ export default class ProcessSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeStep: 0
+      activeStep: -1
     };
   }
 
   componentDidMount() {
     const video = React.findDOMNode(this.refs.video);
 
-    video.onloadeddata = function() {
-      interval = setInterval(function() {
-        const activeStep = (this.state.activeStep + 1) % numSteps;
-        this.setState({ activeStep });
-      }.bind(this), 5000);
-    }.bind(this);
+    if (video) {
+      this.setState({ activeStep: 0 });
+
+      video.onloadeddata = function() {
+        interval = setInterval(function() {
+          const activeStep = (this.state.activeStep + 1) % numSteps;
+          this.setState({ activeStep });
+        }.bind(this), 5000);
+      }.bind(this);
+    }
   }
 
   componentWillUnmount() {
@@ -32,16 +36,22 @@ export default class ProcessSection extends React.Component {
   }
 
   render() {
-    return (
-      <div id='section-process'>
-        <div id='section-process-bg'>
-          <video ref='video' loop autoPlay poster={require('../../assets/images/home.jpg')}>
+
+    let bgVideo;
+    if (window.innerWidth >= 500) {
+      bgVideo = (
+          <video ref='video' loop autoPlay>
             <source src='http://static.optonaut.io.s3.amazonaws.com/process.mp4' type='video/mp4'/>
           </video>
-        </div>
+      );
+    }
+
+    return (
+      <div id='section-process'>
+        <div id='section-process-bg'>{bgVideo}</div>
         <div className='container' id='section-process-content'>
           <h2>Optonaut Is Really Simple</h2>
-          <p>To take a Virtual Reality photograph - or an Optograph, as we call it - you only need the Optonaut app. <strong>Slowly turn around and take a full panorama shot.</strong> Optonaut will do the rest for you.<br/>While you're recording a scene, our servers do the magic of creating a 3D image. The Optograph <strong>can be viewed with any Virtual Reality glasses like Google Cardboard.</strong></p>
+          <p>To take a Virtual Reality photograph - or an Optograph, as we call it - you only need the Optonaut app. <strong>Slowly turn around and take a full panorama shot.</strong> Optonaut will do the rest for you. The Optograph <strong>can be viewed with any Virtual Reality glasses like Google Cardboard.</strong></p>
           <div id='section-process-list'>
             <div className={this.state.activeStep === 0 ? 'active' : ''}>
               <div>1</div>
