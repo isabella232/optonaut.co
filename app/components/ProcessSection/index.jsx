@@ -41,8 +41,7 @@ export default class ProcessSection extends React.Component {
         </div>
         <div className='container' id='section-process-content'>
           <h2>Optonaut Is Really Simple</h2>
-          <p>Put two smartphones in an Optocam and use the Optonaut App to create your 3d panorama. Follow the intuitive instructions and record as if you were taking ordinary panoramas. Our servers will do the rest and you get a brand-new Optograph to share with your friends and family.
-</p>
+          <p>To take a Virtual Reality photograph - or an Optograph, as we call it - you only need the Optonaut app. <strong>Slowly turn around and take a full panorama shot.</strong> Optonaut will do the rest for you.<br/>While you're recording a scene, our servers do the magic of creating a 3D image. The Optograph <strong>can be viewed with any Virtual Reality glasses like Google Cardboard.</strong></p>
           <div id='section-process-list'>
             <div className={this.state.activeStep === 0 ? 'active' : ''}>
               <div>1</div>
