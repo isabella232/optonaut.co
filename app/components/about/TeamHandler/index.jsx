@@ -17,22 +17,24 @@ export default class TeamHandler extends React.Component {
       <div id='team'>
         <div className='container' id='team-content'>
           <h3>Team</h3>
-          It all began in 2014, when this idea won the <a href="http://www.hackzurich.com/">largest European Hackathon</a>.
+          It all began in 2014, when this idea won the <a href='http://www.hackzurich.com/'>largest European Hackathon</a>.
           After further working on and experimenting with the idea, two members of the
-          Hackathon team wanted to take it to the next level and kickstart Optonaut.<br />
+          Hackathon team wanted to take it to the next level and kickstart Optonaut.<br /><br />
           <div className='row'>
-            <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../../assets/images/team_johannes.jpg')} /><br />
-              Johannes Schickling<br />
+            <div className='one-half column' className='team-collumn'>
+              <img className='team-image' src={require('../../../assets/images/team_johannes.jpg')} />
+              <br /><br />
+              Johannes Schickling<br /><br />
               Graduated CS<br />
               Freelancer for +8 years<br />
               Is a deployment expert<br />
               Loves riding his longboard<br />
               Has a magnificient beard
             </div>
-            <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../../assets/images/team_emanuel.jpg')} />
-              Emanuel J&ouml;bstl<br />
+            <div className='one-half column' className='team-collumn'>
+              <img className='team-image' src={require('../../../assets/images/team_emanuel.jpg')} />
+              <br /><br />
+              Emanuel J&ouml;bstl<br /><br />
               Graduated CS<br />
               Wrote his BSc Thesis at CMU<br />
               Started with C programming when he was 14<br />
@@ -45,20 +47,22 @@ export default class TeamHandler extends React.Component {
           <h3>Alumni</h3>
         
           A special thank you goes to our great Hackathon
-          team members Lisa Masserova and Matthias Standfest!<br />
+          team members Lisa Masserova and Matthias Standfest!<br /><br />
 
           <div className='row'>
-            <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../../assets/images/team_lisa.jpg')} />
-              Elisaweta Masserova<br />
+            <div className='one-half column' className='team-collumn'>
+              <img className='team-image' src={require('../../../assets/images/team_lisa.jpg')} />
+              <br /><br />
+              Elisaweta Masserova<br /><br />
               Studying CS<br />
               Mastered integral calculus when she was 15<br />
               Came over from Ukraine to Kick Ass<br />
               Works as a model from time to time<br />
             </div>
-            <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../../assets/images/team_matthias.jpg')} />
-              Matthias Standfest<br />
+            <div className='one-half column' className='team-collumn'>
+              <img className='team-image' src={require('../../../assets/images/team_matthias.jpg')} />
+              <br /><br />
+              Matthias Standfest<br /><br />
               Works on his PhD in Architecture<br />
               Is an expert for product design<br />
               Owns a really cool griller<br />
