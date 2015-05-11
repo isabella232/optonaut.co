@@ -13,37 +13,33 @@ export default class Footer extends React.Component {
           <div>
             <div id='footer-copy'>Optonaut 2015</div>
             <div id='footer-social'>
-              <a href='#' title='Facebook'><span className='icon' id='footer-facebook'></span></a>
-              <a href='#' title='Twitter'><span className='icon' id='footer-twitter'></span></a>
-              <a href='#' title='Google Plus'><span className='icon' id='footer-google'></span></a>
+              <a href='https://www.facebook.com/optonaut.io' title='Facebook'><span className='icon' id='footer-facebook'></span></a>
+              <a href='https://twitter.com/optonautio' title='Twitter'><span className='icon' id='footer-twitter'></span></a>
+              <a href='https://plus.google.com/u/0/communities/107176026716713260575' title='Google Plus'><span className='icon' id='footer-google'></span></a>
               <a href='#' title='Youtube'><span className='icon' id='footer-youtube'></span></a>
-              <a href='#' title='Instagram'><span className='icon' id='footer-instagram'></span></a>
-              <a href='#' title='Pinterest'><span className='icon' id='footer-pinterest'></span></a>
-              <a href='#' title='Github'><span className='icon' id='footer-github'></span></a>
+              <a href='https://instagram.com/optonaut/' title='Instagram'><span className='icon' id='footer-instagram'></span></a>
+              <a href='https://github.com/optonaut/' title='Github'><span className='icon' id='footer-github'></span></a>
             </div>
           </div>
           <div>
             <h5>About</h5>
             <ul>
               <li><Link to='about-team'>Team</Link></li>
-              <li><Link to='about-team'>Blog</Link></li>
               <li><Link to='about-press'>Press</Link></li>
             </ul>
           </div>
           <div>
             <h5>Hardware</h5>
             <ul>
-              <li><a href='#'>Pre-Order</a></li>
-              <li><a href='#'>Durovis Dive</a></li>
-              <li><a href='#'>Kula3D</a></li>
+              <li><a href='http://durovis.com'>Durovis Dive</a></li>
+              <li><a href='http://www.kula3d.com'>Kula3D</a></li>
             </ul>
           </div>
           <div>
             <h5>Legal</h5>
             <ul>
               <li><Link to='legal-imprint'>Imprint</Link></li>
-              <li><a href='#'>Contact</a></li>
-              <li><a href='#'>Terms</a></li>
+              <li><Link to='legal-credits'>Credits</Link></li>
             </ul>
           </div>
         </div>
