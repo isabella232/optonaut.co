@@ -54,16 +54,16 @@ export default class ProcessSection extends React.Component {
           <p>To take a Virtual Reality photograph - or an Optograph, as we call it - you only need the Optonaut app. <strong>Slowly turn around and take a full panorama shot.</strong> Optonaut will do the rest for you. The Optograph <strong>can be viewed with any Virtual Reality glasses like Google Cardboard.</strong></p>
           <div id='section-process-list'>
             <div className={this.state.activeStep === 0 ? 'active' : ''}>
-              <div>1</div>
-              <span>Caputure the scene with your smartphone</span>
+              <div className='section-process-number'>1</div>
+              <div className='section-process-desc'>Caputure the scene with your smartphone</div>
             </div>
             <div className={this.state.activeStep === 1 ? 'active' : ''}>
-              <div>2</div>
-              <span>Our servers do the magic of creating a 3D image</span>
+              <div className='section-process-number'>2</div>
+              <div className='section-process-desc'>Our servers do the magic of creating a 3D image</div>
             </div>
             <div className={this.state.activeStep === 2 ? 'active' : ''}>
-              <div>3</div>
-              <span>View your Optograph and share it with your friends</span>
+              <div className='section-process-number'>3</div>
+              <div className='section-process-desc'>View your Optograph and share it with your friends</div>
             </div>
           </div>
         </div>
