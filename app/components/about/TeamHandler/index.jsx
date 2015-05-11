@@ -22,7 +22,7 @@ export default class TeamHandler extends React.Component {
           Hackathon team wanted to take it to the next level and kickstart Optonaut.<br />
           <div className='row'>
             <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../assets/images/team_johannes.jpg')} /><br />
+              <img class='team-image' src={require('../../../assets/images/team_johannes.jpg')} /><br />
               Johannes Schickling<br />
               Graduated CS<br />
               Freelancer for +8 years<br />
@@ -31,7 +31,7 @@ export default class TeamHandler extends React.Component {
               Has a magnificient beard
             </div>
             <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../assets/images/team_emanuel.jpg')} />
+              <img class='team-image' src={require('../../../assets/images/team_emanuel.jpg')} />
               Emanuel J&ouml;bstl<br />
               Graduated CS<br />
               Wrote his BSc Thesis at CMU<br />
@@ -49,7 +49,7 @@ export default class TeamHandler extends React.Component {
 
           <div className='row'>
             <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../assets/images/team_lisa.jpg')} />
+              <img class='team-image' src={require('../../../assets/images/team_lisa.jpg')} />
               Elisaweta Masserova<br />
               Studying CS<br />
               Mastered integral calculus when she was 15<br />
@@ -57,7 +57,7 @@ export default class TeamHandler extends React.Component {
               Works as a model from time to time<br />
             </div>
             <div className='one-half column' class="team-collumn">
-              <img class='team-image' src={require('../../assets/images/team_matthias.jpg')} />
+              <img class='team-image' src={require('../../../assets/images/team_matthias.jpg')} />
               Matthias Standfest<br />
               Works on his PhD in Architecture<br />
               Is an expert for product design<br />
