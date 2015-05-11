@@ -2,28 +2,41 @@
 
 #team {
   width: 100%;
-  background: @white;
+  background: #fff;
   position: relative;
   float: left;
-  color: #fff;
+  color: @grey;
   text-align: center;
 }
 
 #team-content {
+  margin: 0 auto 2rem;
+
   h3 {
     margin: 3rem 0 1rem;
   }
-}
 
-.team-image {
-  width: 4rem;
-  height: 4rem;
-  background: #333;
-  border-radius: 50%;
-  margin: 0 0 0 0;
-  display: inline-block;
-}
+  .column {
 
-.team-collumn {
-	text-align: center;
+  }
+
+  ul {
+    margin: 1rem auto;
+    width: 70%;
+  }
+
+  li {
+    text-align: left;
+    font-size: 0.8rem;
+    margin: 0 0 0.2rem;
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 0 0.5rem;
+    display: inline-block;
+  }
 }

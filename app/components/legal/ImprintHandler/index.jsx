@@ -34,7 +34,7 @@ export default class ImprintHandler extends React.Component {
         <h3>Data Protection</h3>
         This website makes use of Google Analytics. Therefore, anonymous usage statistics are collected.
         Data entered into the website is exclusively used for the indicated purposes
-        and not transmitted to 3rd parties. 
+        and not transmitted to 3rd parties.
       </div>
     );
   }
