@@ -23,14 +23,14 @@ export default class Html extends React.Component {
         </head>
         <body dangerouslySetInnerHTML={{__html: this.props.markup}} />
         <script src={`/bundle.${this.props.scriptHash}.js`} async></script>
-        <script>
+        <script dangerouslySetInnerHTML={{__html: `
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-62427242-1','auto');ga('send','pageview');ga('set', 'anonymizeIp', true);
-        </script>
+        `}} />
       </html>
     );
   }
