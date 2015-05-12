@@ -27,7 +27,7 @@ export default class FaqSection extends React.Component {
             </div>
             <div className='one-half column'>
               <strong>What is Optonaut going to cost?</strong><br/>
-              Optonaut will available be for free.<br/>
+              Optonaut will be available for free.<br/>
               We'll sell your data instead. Just kidding.
             </div>
           </div>
