@@ -9,11 +9,13 @@ import TeamHandler from '../about/TeamHandler';
 import PressHandler from '../about/PressHandler';
 import ImprintHandler from '../legal/ImprintHandler';
 import CreditsHandler from '../legal/CreditsHandler';
+import KickstarterHandler from '../KickstarterHandler';
 import NotFoundHandler from '../NotFoundHandler';
 
 var routes = (
   <Route name='appBody' path='/' handler={Layout}>
     <DefaultRoute name='home' handler={HomeHandler}/>
+    <Route name='Kickstarter' handler={KickstarterHandler}/>
     <Route name='login' path='login/' handler={LoginHandler}/>
     <Route name='about-team' path='about/team/' handler={TeamHandler}/>
     <Route name='about-press' path='about/press/' handler={PressHandler}/>
