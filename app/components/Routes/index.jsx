@@ -15,7 +15,7 @@ import NotFoundHandler from '../NotFoundHandler';
 var routes = (
   <Route name='appBody' path='/' handler={Layout}>
     <DefaultRoute name='home' handler={HomeHandler}/>
-    <Route name='Kickstarter' handler={KickstarterHandler}/>
+    <Route name='kickstarter' path='kickstarter/' handler={KickstarterHandler}/>
     <Route name='login' path='login/' handler={LoginHandler}/>
     <Route name='about-team' path='about/team/' handler={TeamHandler}/>
     <Route name='about-press' path='about/press/' handler={PressHandler}/>
