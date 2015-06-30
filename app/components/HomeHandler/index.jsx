@@ -26,7 +26,7 @@ export default class HomeHandler extends React.Component {
     return (
       <div>
         <HomeSection/>
-        <CampaignSection/>
+        {/*<CampaignSection/>*/}
         <FeaturesSection/>
         {/*<MapSection/>*/}
         {/*<HardwareSection/>*/}
