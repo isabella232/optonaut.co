@@ -6,28 +6,28 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://optonaut.com/</loc>
-  <lastmod>2015-05-11T17:19:04+00:00</lastmod>
+  <loc>http://optonaut.co/</loc>
+  <lastmod>2015-07-11T17:19:04+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://optonaut.com/about/team/</loc>
-  <lastmod>2015-05-11T17:19:04+00:00</lastmod>
+  <loc>http://optonaut.co/about/team/</loc>
+  <lastmod>2015-07-11T17:19:04+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://optonaut.com/about/press/</loc>
-  <lastmod>2015-05-11T17:19:04+00:00</lastmod>
+  <loc>http://optonaut.co/about/press/</loc>
+  <lastmod>2015-07-11T17:19:04+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://optonaut.com/legal/imprint/</loc>
-  <lastmod>2015-05-11T17:19:04+00:00</lastmod>
+  <loc>http://optonaut.co/legal/imprint/</loc>
+  <lastmod>2015-07-11T17:19:04+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://optonaut.com/legal/credits/</loc>
-  <lastmod>2015-05-11T17:19:04+00:00</lastmod>
+  <loc>http://optonaut.co/legal/credits/</loc>
+  <lastmod>2015-07-11T17:19:04+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 </urlset>

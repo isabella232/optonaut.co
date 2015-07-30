@@ -24,7 +24,7 @@ export default class Footer extends React.Component {
           <div>
             <h5>About</h5>
             <ul>
-              <li><a href='http://blog.optonaut.com'>Blog</a></li>
+              <li><a href='http://blog.optonaut.co'>Blog</a></li>
               <li><Link to='about-team'>Team</Link></li>
               <li><Link to='about-press'>Press</Link></li>
             </ul>
