@@ -55,7 +55,7 @@ export default class ProcessSection extends React.Component {
           <div id='section-process-list'>
             <div className={this.state.activeStep === 0 ? 'active' : ''}>
               <div className='section-process-number'>1</div>
-              <div className='section-process-desc'>Caputure the scene with your smartphone</div>
+              <div className='section-process-desc'>Capture the scene with your smartphone</div>
             </div>
             <div className={this.state.activeStep === 1 ? 'active' : ''}>
               <div className='section-process-number'>2</div>
