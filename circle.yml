@@ -1,0 +1,17 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - npm run build
+
+test:
+  override:
+    - npm test
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - docker run -v $(pwd)/build:/s3 schickling/s3cmd --access_key=$S3_KEY --secret_key=$S3_SECRET --force --delete-removed --acl-public sync . s3://$S3_BUCKET
