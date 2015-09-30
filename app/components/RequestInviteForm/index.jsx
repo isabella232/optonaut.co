@@ -36,12 +36,10 @@ export default class RequestInviteForm extends React.Component {
       this.setState({ loading: true });
 
       var request = new XMLHttpRequest();
-      var url = 'https://api.parse.com/1/classes/invite';
+      var url = 'https://api-v4-production.optonaut.co/persons/request-invite';
 
       request.open('POST', url, true);
       request.setRequestHeader('Content-Type', 'application/json');
-      request.setRequestHeader('X-Parse-Application-Id', 'z17SUVXKL2JqHShB3jMSjphyMqPiCZ9nqTX7Fn7M');
-      request.setRequestHeader('X-Parse-REST-API-Key', 'f3uFeCxiRQkgDWMYmMEGinF53VpIffhg1m5jWgdu');
 
       request.onload = function() {
         if (request.status >= 200 && request.status < 400) {
