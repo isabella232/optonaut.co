@@ -19,7 +19,7 @@ export default class HomeHandler extends React.Component {
 
   componentWillMount() {
     this.props.headParams.setTitle('Optonaut - Virtual Reality Photography');
-    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.');
+    this.props.headParams.setDescription('Take Virtual Reality pictures using your phone and share them with your friends.');
   }
 
   render() {

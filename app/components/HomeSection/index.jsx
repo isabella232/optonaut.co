@@ -90,7 +90,7 @@ export default class HomeSection extends React.Component {
         <div className='container' id='section-home-content'>
           <div id='section-home-headline'>
             <h1>Virtual Reality is now</h1>
-            <span>Take VR pictures with your phone and share them with your friends</span>
+            <span>Take VR pictures using your phone and share them with your friends</span>
           </div>
           <div className='icon' id='section-home-play' onClick={this.showVideo.bind(this)}></div>
         </div>
