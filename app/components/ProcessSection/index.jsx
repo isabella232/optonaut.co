@@ -59,7 +59,7 @@ export default class ProcessSection extends React.Component {
             </div>
             <div className={this.state.activeStep === 1 ? 'active' : ''}>
               <div className='section-process-number'>2</div>
-              <div className='section-process-desc'>Our servers do the magic of creating a 3D image</div>
+              <div className='section-process-desc'>The Optonaut app extracts 3D information out of the images</div>
             </div>
             <div className={this.state.activeStep === 2 ? 'active' : ''}>
               <div className='section-process-number'>3</div>

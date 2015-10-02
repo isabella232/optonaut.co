@@ -38,7 +38,7 @@ export default class HomeSection extends React.Component {
     } else {
       foot = (
         <div className='container' id='section-home-foot-wrapper'>
-          <div id='section-home-foot-desc'>Optonaut is <strong>invite only</strong> at this stage. Request an invite to get <strong>early access</strong>.</div>
+          <div id='section-home-foot-desc'>Optonaut for iOS is in <strong>public beta</strong> at the moment. Request an invite to <strong>try it out</strong>.</div>
           <div className='big-button' id='section-home-foot-button' onClick={this.showInviteForm.bind(this)}>Request Invite</div>
         </div>
       );
@@ -89,8 +89,8 @@ export default class HomeSection extends React.Component {
       content = (
         <div className='container' id='section-home-content'>
           <div id='section-home-headline'>
-            <h1>Dive Into Your Pictures</h1>
-            <span>Take Virtual Reality Photographs With Your Smartphone.</span>
+            <h1>Virtual Reality is now</h1>
+            <span>Take VR pictures with your phone and share them with your friends</span>
           </div>
           <div className='icon' id='section-home-play' onClick={this.showVideo.bind(this)}></div>
         </div>

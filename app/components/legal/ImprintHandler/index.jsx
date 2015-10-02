@@ -16,11 +16,11 @@ export default class ImprintHandler extends React.Component {
     return (
       <div id='imprint'>
         <div className='container' id='imprint-content'>
-          Optonaut Johannes Schickling und Emanuel J&ouml;bstl Gbr<br /><br />
+          Optonaut Limited<br /><br />
 
-          Registered Office: M&uuml;hlburger Straße 8, 76185 Karlsruhe, Germany<br />
-          Phone: +49 152 2149 50 89<br />
-          E-Mail: <a href='mailto:optonaut.io@gmail.com'>optonaut.io@gmail.com</a><br />
+          Registered Office: Weston Street, London, SE1 3ER<br />
+          Phone: +44 (0) 7752 342042<br />
+          E-Mail: <a href='mailto:hello@optonaut.co'>hello@optonaut.co</a><br />
 
           <h3>Copyright</h3>
 

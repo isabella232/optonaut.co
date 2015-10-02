@@ -17,18 +17,17 @@ export default class FaqSection extends React.Component {
             </div>
             <div className='one-half column'>
               <strong>Does Optonaut work with my smartphone?</strong><br/>
-              Optonaut will work with most popular Android and iOS devices. The minimum requirement is having a camera and orientation sensors.
+              At the moment we are supporting the iPhone 5 and newer iPhones. Android devices will be supported in the near future as well.
             </div>
           </div>
           <div className='row'>
             <div className='one-half column'>
               <strong>When will Optonaut be released?</strong><br/>
-              Optonaut for Android will be released in August 2015. The iOS version follows two months later.
+              Optonaut for iOS is currently in public beta. The final version will be released in December 2015.
             </div>
             <div className='one-half column'>
               <strong>What is Optonaut going to cost?</strong><br/>
-              Optonaut will be available for free.<br/>
-              We'll sell your data instead. Just kidding.
+              Optonaut is a free app which you can download on the App Store.
             </div>
           </div>
         </div>

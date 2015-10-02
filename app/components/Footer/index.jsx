@@ -29,13 +29,13 @@ export default class Footer extends React.Component {
               <li><Link to='about-press'>Press</Link></li>
             </ul>
           </div>
-          <div>
+          {/*<div>
             <h5>Hardware</h5>
             <ul>
               <li><a href='http://durovis.com'>Durovis Dive</a></li>
               <li><a href='http://www.kula3d.com'>Kula3D</a></li>
             </ul>
-          </div>
+          </div>*/}
           <div>
             <h5>Legal</h5>
             <ul>
