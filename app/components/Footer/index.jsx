@@ -40,6 +40,7 @@ export default class Footer extends React.Component {
             <h5>Legal</h5>
             <ul>
               <li><Link to='legal-imprint'>Imprint</Link></li>
+              <li><Link to='legal-terms'>Terms</Link></li>
               {/*<li><Link to='legal-credits'>Credits</Link></li>*/}
             </ul>
           </div>
