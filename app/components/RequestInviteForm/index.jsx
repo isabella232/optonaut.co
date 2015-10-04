@@ -36,7 +36,7 @@ export default class RequestInviteForm extends React.Component {
       this.setState({ loading: true });
 
       var request = new XMLHttpRequest();
-      var url = 'https://api-v4-production.optonaut.co/persons/request-invite';
+      var url = 'https://api-v5-production.optonaut.co/persons/request-invite';
 
       request.open('POST', url, true);
       request.setRequestHeader('Content-Type', 'application/json');
