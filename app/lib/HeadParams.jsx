@@ -1,6 +1,4 @@
 'use strict';
-//var $ = require('jquery');
-//var $ = function() {};
 
 var isClient = function() {
   return typeof window !== 'undefined' && 'document' in window;
