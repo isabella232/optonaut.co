@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
           <div>
             <div id='footer-copy'>Optonaut 2015</div>
             <div id='footer-social'>
-              <a href='https://www.facebook.com/optonaut.io' title='Facebook'><span className='icon' id='footer-facebook'></span></a>
+              <a href='https://www.facebook.com/optonautVR' title='Facebook'><span className='icon' id='footer-facebook'></span></a>
               <a href='https://twitter.com/optonautVR' title='Twitter'><span className='icon' id='footer-twitter'></span></a>
               <a href='https://plus.google.com/u/0/communities/107176026716713260575' title='Google Plus'><span className='icon' id='footer-google'></span></a>
               <a href='https://www.youtube.com/channel/UCMOrtW69qlaiwh4VzlXAZpA' title='Youtube'><span className='icon' id='footer-youtube'></span></a>
