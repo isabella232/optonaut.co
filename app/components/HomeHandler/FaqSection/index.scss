@@ -1,0 +1,19 @@
+@import "../../../variables.scss";
+
+:local(.root) {
+  width: 100%;
+  position: relative;
+  float: left;
+  color: $dark-grey;
+  padding: 2rem 0 0;
+}
+
+:local(.headline) {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin: 2rem auto 3rem;
+    padding: 0 1rem;
+  }
+}

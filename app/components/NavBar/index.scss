@@ -1,0 +1,143 @@
+@import "../../variables.scss";
+
+:local(.root) {
+  height: 74px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $accent;
+  z-index: 100;
+  font-size: 0.8rem;
+  font-weight: 200;
+
+  &.shrink {
+    height: 60px;
+  }
+
+  &.toggled {
+    display: flex;
+
+    :local(.logo) {
+      display: none;
+    }
+
+    :local(.nav) {
+      display: flex;
+      float: left;
+    }
+
+    :local(.menu):before {
+      content: "\ea0f";
+      font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: 749px) {
+    height: 60px;
+    font-size: 15px;
+  }
+
+  @media (max-width: 549px) {
+    height: 60px;
+    font-size: 14px !important;
+  }
+
+  @media (max-width: 299px) {
+    height: 60px;
+    font-size: 13px !important;
+  }
+}
+
+:local(.wrapper) {
+  height: 100%;
+}
+
+:local(.logo) {
+  float: left;
+  height: 100%;
+  display: flex;
+  position: relative;
+
+  a {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+:local(.logo):before {
+  content: "\e601";
+  font-size: 1.6em;
+  color: #fff;
+  margin: auto 0;
+}
+
+:local(.nav) {
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  @media (max-width: 749px) {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0 1.1em;
+    display: inline-block;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .navbar-nav-default {
+    color: #fff;
+  }
+
+  .navbar-nav-special {
+    color: $accent;
+    background: #fff;
+    padding: 0.4em 0.8em;
+    border-radius: 0.15rem;
+    font-weight: 500;
+    transition: padding 0.2s ease-in-out;
+
+    &:hover {
+      padding: 2em 0.8em;
+      margin-top: 0;
+      border: 0;
+    }
+  }
+}
+
+:local(.menu) {
+  display: none;
+
+  @media (max-width: 749px) {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+:local(.menu):before {
+  content: "\e9bd";
+  font-size: 1.5em;
+  color: #fff;
+  margin: auto 0;
+}

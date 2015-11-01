@@ -1,7 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './app/client.jsx',
+    entry: './app/client.js',
     output: {
         path: './build',
         filename: 'bundle.[hash].js',
@@ -13,7 +13,7 @@ module.exports = {
     },
     module: {
         preLoaders: [{
-            test: /\.jsx$/,
+            test: /\.js$/,
             exclude: /node_modules/,
             loader: 'eslint-loader'
         }],
@@ -21,17 +21,20 @@ module.exports = {
             test: /\.css$/,
             loader: 'style!css'
         }, {
+          test: /\.scss/,
+          loader: 'style!css?localIdentName=[path][local]-[hash:base64:5]!autoprefixer!sass'
+        }, {
             test: /\.less$/,
             loader: 'style!css!autoprefixer!less'
         }, {
-            test: /\.jsx$/,
+            test: /\.js$/,
             exclude: /node_modules/,
             loader: 'react-hot!babel?optional=runtime'
         }, {
             test: /\.(svg|jpg|png)$/,
             loader: 'url?limit=10000'
         }, {
-            test: /\.(ttf|eot|woff)$/,
+            test: /\.(ttf|eot|woff|woff2)$/,
             loader: 'url?limit=100000'
         }]
     },
@@ -39,6 +42,6 @@ module.exports = {
         template: 'index.html'
     })],
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js']
     }
 };

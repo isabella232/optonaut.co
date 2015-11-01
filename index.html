@@ -10,8 +10,8 @@
 
 <body>
     <div id="app"></div>
-    {% for (var chunk in o.htmlWebpackPlugin.assets) { %}
-    <script src="{%=o.htmlWebpackPlugin.assets[chunk]%}"></script>
+    {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+    <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
     {% } %}
 </body>
 

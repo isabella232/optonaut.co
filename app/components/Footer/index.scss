@@ -1,0 +1,85 @@
+@import "../../variables.scss";
+
+#footer {
+  width: 100%;
+  float: left;
+  background: #F9F9F9;
+  color: $dark-grey;
+  padding: 2rem 0 1rem;
+  font-size: 0.7rem;
+
+  h5 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    margin: 0 0 1rem;
+  }
+
+  li {
+    list-style: none;
+    margin: 0 0 0.3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+  }
+
+  .icon {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+#footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > div {
+    flex-grow: 1;
+  }
+}
+
+#footer-copy {
+  margin-bottom: 1rem;
+}
+
+#footer-social {
+  margin-bottom: 1rem;
+}
+
+#footer-facebook:before {
+  content: "\ea8d";
+}
+
+#footer-twitter:before {
+  content: "\ea92";
+}
+
+#footer-google:before {
+  content: "\ea7c";
+}
+
+#footer-youtube:before {
+  content: "\ea97";
+}
+
+#footer-instagram:before {
+  content: "\ea90";
+}
+
+#footer-pinterest:before {
+  content: "\ead1";
+}
+
+#footer-github:before {
+  content: "\eab1";
+}

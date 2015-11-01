@@ -1,0 +1,47 @@
+@import "../../../variables.scss";
+
+:local(.root) {
+  width: 100%;
+  position: relative;
+  float: left;
+  color: #fff;
+  padding: 2rem 0 0;
+  background: url(../../../assets/images/panorama.jpg) no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+:local(.headline) {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin: 2rem auto 3rem;
+    padding: 0 1rem;
+  }
+}
+
+:local(.wrapper) {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+:local(.iphone) {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 0 3.5rem;
+}
+
+:local(.foot) {
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 1.5rem 0;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+
+  @media (max-width: 61.9em) {
+    font-size: 1rem;
+  }
+}

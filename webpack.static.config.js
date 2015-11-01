@@ -79,7 +79,7 @@ var config = require('./webpack.config');
 config.plugins = [injectHtmlPlugin, copyAssets];
 
 module.exports = [{
-        entry: './app/static.jsx',
+        entry: './app/static.js',
         target: 'node',
         output: {
             path: './build',

@@ -1,0 +1,54 @@
+@import "../../../variables.scss";
+
+:local(.root) {
+  width: 100%;
+  position: relative;
+  float: left;
+  color: $dark-grey;
+  padding: 2rem 0;
+}
+
+:local(.headline) {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin: 2rem auto 3rem;
+    padding: 0 1rem;
+  }
+}
+
+:local(.wrapper) {
+  display: flex;
+}
+
+:local(.left) {
+  width: 50%;
+  text-align: right;
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 47.9em) {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+:local(.right) {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 47.9em) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media (max-width: 33.9em) {
+    font-size: 1.3rem;
+  }
+}
