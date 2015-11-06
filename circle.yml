@@ -15,3 +15,7 @@ deployment:
     branch: master
     commands:
       - docker run -v $(pwd)/build:/s3 schickling/s3cmd --access_key=$S3_KEY --secret_key=$S3_SECRET --force --no-preserve --cf-invalidate --acl-public sync . s3://$S3_BUCKET
+  dev:
+    branch: dev
+    commands:
+      - docker run -v $(pwd)/build:/s3 schickling/s3cmd --access_key=$S3_DEV_KEY --secret_key=$S3_DEV_SECRET --force --no-preserve --cf-invalidate --acl-public sync . s3://$S3_DEV_BUCKET
