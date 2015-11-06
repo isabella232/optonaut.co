@@ -15,7 +15,7 @@ function gather(routes, parentPath) {
     }
 
     routes.forEach(function(route) {
-        var props = route._store.props; // eslint-disable-line no-underscore-dangle
+        var props = route.props;
         var routePath = props.path;
 
         if (routePath) {
@@ -54,6 +54,7 @@ function injectHtmlPlugin() {
         var scriptHash = webpackStatsJson.hash;
         console.log(scriptHash);
         var paths = gather(app.routes);
+        console.log(paths);
         var pageCount = paths.length;
         paths.forEach(function(p) {
             app.routeToString(p, scriptHash, function(html) {
@@ -77,6 +78,7 @@ function copyAssets() {
 var config = require('./webpack.config');
 
 config.plugins = [injectHtmlPlugin, copyAssets];
+//config.module.loaders = null;
 
 module.exports = [{
         entry: './app/static.js',
@@ -92,18 +94,18 @@ module.exports = [{
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract('css')
             }, {
-                test: /\.less$/,
-                loader: ExtractTextPlugin.extract('css!autoprefixer!less')
+                test: /\.scss/,
+                loader: ExtractTextPlugin.extract('css!autoprefixer!sass')
             }, {
-                test: /\.jsx$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel'
             }, {
                 test: /\.(svg|jpg|png)$/,
-                loader: 'null'
+                loader: 'url?limit=10000'
             }, {
-                test: /\.(ttf|eot|woff)$/,
-                loader: 'null'
+                test: /\.(ttf|eot|woff|woff2)$/,
+                loader: 'url?limit=100000'
             }]
         },
         plugins: [
@@ -112,7 +114,7 @@ module.exports = [{
             })
         ],
         resolve: {
-            extensions: ['', '.js', '.jsx']
+            extensions: ['', '.js']
         }
     },
     config

@@ -1,7 +1,6 @@
-'use strict'
-
 import React from 'react'
-import Router from 'react-router'
+import { renderToString } from 'react-dom/server'
+import { match, RoutingContext } from 'react-router'
 import HeadParams from './lib/HeadParams'
 import Routes from './components/Routes'
 import Html from './components/Html'
@@ -11,19 +10,17 @@ module.exports = {
   routes: Routes,
 
   routeToString: function(path, scriptHash, callback) {
-    let headParams = new HeadParams()
+    const headParams = new HeadParams()
 
-    Router.run(Routes, path, function (Handler, state) {
-      let bodyElement = React.createFactory(Handler)({
-        params: state.params,
-        headParams: headParams,
-        clientReady: true
-      })
-      var bodyHtml = React.renderToString(bodyElement)
-      let htmlElement = (
+    match({ routes: Routes, location: path }, function(error, redirectLocation, renderProps) {
+      const bodyElement = (
+        <RoutingContext {...renderProps} headParams={headParams} />
+      )
+      const bodyHtml = renderToString(bodyElement)
+      const htmlElement = (
         <Html markup={bodyHtml} headParams={headParams} scriptHash={scriptHash} />
       )
-      var html = React.renderToStaticMarkup(htmlElement)
+      const html = renderToString(htmlElement)
 
       callback(html)
     })

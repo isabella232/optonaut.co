@@ -12,11 +12,11 @@ module.exports = {
         reasons: true
     },
     module: {
-        preLoaders: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'eslint-loader'
-        }],
+        //preLoaders: [{
+            //test: /\.js$/,
+            //exclude: /node_modules/,
+            //loader: 'eslint'
+        //}],
         loaders: [{
             test: /\.css$/,
             loader: 'style!css'
@@ -29,7 +29,7 @@ module.exports = {
         }, {
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'react-hot!babel?optional=runtime'
+            loader: 'react-hot!babel'
         }, {
             test: /\.(svg|jpg|png)$/,
             loader: 'url?limit=10000'

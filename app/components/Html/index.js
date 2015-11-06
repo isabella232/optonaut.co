@@ -3,26 +3,10 @@
 import React from 'react'
 import HeadParams from '../../lib/HeadParams'
 
-const tawkSnippet = `
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date()
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0]
-s1.async=true
-s1.src='https://embed.tawk.to/55ed5e9cd4058169055fc7b5/default'
-s1.charset='UTF-8'
-s1.setAttribute('crossorigin','*')
-s0.parentNode.insertBefore(s1,s0)
-})()
-</script>
-<!--End of Tawk.to Script-->
-`
-
 export default class Html extends React.Component {
 
   render() {
-    const markup = this.props.markup + tawkSnippet
+    const markup = this.props.markup
     return (
       <html>
         <head>
@@ -38,15 +22,18 @@ export default class Html extends React.Component {
           <link href='/style.css' media='all' rel='stylesheet' />
 
         </head>
-        <body dangerouslySetInnerHTML={{__html: markup}} />
+        <body>
+          <div id='app' dangerouslySetInnerHTML={{__html: markup}}></div>
+        </body>
         <script src={`/bundle.${this.props.scriptHash}.js`} async></script>
         <script dangerouslySetInnerHTML={{__html: `
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=lb[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)})b[l].l=+new Date
-            e=o.createElement(i)r=o.getElementsByTagName(i)[0]
-            e.src='https://www.google-analytics.com/analytics.js'
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'))
-            ga('create','UA-62427242-1','auto')ga('send','pageview')ga('set', 'anonymizeIp', true)
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create','UA-62427242-1','auto');
+          ga('send','pageview');
+          ga('set', 'anonymizeIp', true);
         `}} />
       </html>
     )
