@@ -1,22 +1,24 @@
-'use strict';
+'use strict'
 
-import React from 'react';
-import { createRoutes, Route, IndexRoute, NotFoundRoute } from 'react-router';
-import Layout from '../Layout';
-import HomeHandler from '../HomeHandler';
-//import LoginHandler from '../LoginHandler';
-//import TeamHandler from '../about/TeamHandler';
-//import PressHandler from '../about/PressHandler';
-//import ImprintHandler from '../legal/ImprintHandler';
-//import CreditsHandler from '../legal/CreditsHandler';
-//import TermsHandler from '../legal/TermsHandler';
-//import NotFoundHandler from '../NotFoundHandler';
+import React from 'react'
+import { createRoutes, Route, IndexRoute, NotFoundRoute } from 'react-router'
+import Layout from '../Layout'
+import HomeHandler from '../HomeHandler'
+import AboutHandler from '../AboutHandler'
+//import LoginHandler from '../LoginHandler'
+//import TeamHandler from '../about/TeamHandler'
+//import PressHandler from '../about/PressHandler'
+//import ImprintHandler from '../legal/ImprintHandler'
+//import CreditsHandler from '../legal/CreditsHandler'
+//import TermsHandler from '../legal/TermsHandler'
+//import NotFoundHandler from '../NotFoundHandler'
 
 module.exports = (
   <Route path='/' component={Layout}>
-    <IndexRoute name='home' component={HomeHandler} />
+    <IndexRoute component={HomeHandler} />
+    <Route path='about' component={AboutHandler} />
   </Route>
-);
+)
 
 //var routes = (
   //<Route name='appBody' path='/' handler={Layout}>
@@ -29,7 +31,7 @@ module.exports = (
     //<Route name='legal-terms' path='terms/' handler={TermsHandler}/>
     //<NotFoundRoute name='not-found' handler={NotFoundHandler}/>
   //</Route>
-//);
+//)
 
 
-//module.exports = routes;
+//module.exports = routes

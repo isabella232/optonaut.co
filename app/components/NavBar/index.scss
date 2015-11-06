@@ -1,4 +1,5 @@
 @import "../../variables.scss";
+@import "../../mixins.scss";
 
 :local(.root) {
   height: 74px;
@@ -8,9 +9,10 @@
   left: 0;
   right: 0;
   background: $accent;
-  z-index: 100;
+  z-index: 200;
   font-size: 0.8rem;
   font-weight: 200;
+  transition: height 0.2s;
 
   &.shrink {
     height: 60px;
@@ -29,29 +31,25 @@
     }
 
     :local(.menu):before {
-      content: "\ea0f";
+      content: "\e906";
       font-size: 1.2em;
     }
   }
 
   @media (max-width: 749px) {
     height: 60px;
-    font-size: 15px;
-  }
-
-  @media (max-width: 549px) {
-    height: 60px;
-    font-size: 14px !important;
-  }
-
-  @media (max-width: 299px) {
-    height: 60px;
-    font-size: 13px !important;
   }
 }
 
 :local(.wrapper) {
   height: 100%;
+  width: 100%;
+  position: relative;
+
+  @media (max-width: 749px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 :local(.logo) {
@@ -73,7 +71,7 @@
 }
 
 :local(.logo):before {
-  content: "\e601";
+  content: "\e902";
   font-size: 1.6em;
   color: #fff;
   margin: auto 0;
@@ -88,6 +86,10 @@
 
   @media (max-width: 749px) {
     display: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.2rem;
   }
 
   a {
@@ -106,26 +108,33 @@
 
   .navbar-nav-default {
     color: #fff;
+    padding: 0.2rem 0;
+
+    &:hover {
+      border-bottom: 1px solid #fff;
+    }
   }
 
   .navbar-nav-special {
-    color: $accent;
-    background: #fff;
-    padding: 0.4em 0.8em;
+    padding: 0.5em 1.1em;
     border-radius: 0.15rem;
     font-weight: 500;
-    transition: padding 0.2s ease-in-out;
+    box-shadow: inset 0 0 0 1px #fff;
+    color: #fff;
+    font-size: 0.7em;
 
     &:hover {
-      padding: 2em 0.8em;
-      margin-top: 0;
-      border: 0;
+      background: #fff;
+      color: $accent;
+      box-shadow: 0;
     }
   }
 }
 
 :local(.menu) {
   display: none;
+  position: absolute;
+  right: 1rem;
 
   @media (max-width: 749px) {
     float: right;
@@ -136,7 +145,7 @@
 }
 
 :local(.menu):before {
-  content: "\e9bd";
+  content: "\e905";
   font-size: 1.5em;
   color: #fff;
   margin: auto 0;

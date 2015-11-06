@@ -5,7 +5,8 @@
     "node": true
   },
   "plugins": [
-    "react"
+    "react",
+    "babel"
   ],
   "ecmaFeatures": {
     "jsx": true
@@ -13,9 +14,9 @@
   "rules": {
     "quotes": [2, "single"],
     "eol-last": [0],
+    "semi": [2, "never"],
     "no-mixed-requires": [0],
     "no-underscore-dangle": [0],
-    "react/jsx-quotes": 1,
     "react/jsx-no-undef": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,

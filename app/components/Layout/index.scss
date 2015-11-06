@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap-flex.scss";
 @import "../../variables.scss";
+@import "../../mixins.scss";
 
 @font-face {
   font-family: 'icomoon';
@@ -43,17 +44,19 @@
 html, body {
   font-family: "San Francisco Display", "Helvetica Neue";
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 200;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #F9F9F9;
 
-  @media (max-width: 749px) {
+  /*@media (max-width: 749px) {*/
+  @include media-breakpoint-down(sm) {
     font-size: 17px;
   }
 
-  @media (max-width: 399px) {
+  /*@media (max-width: 399px) {*/
+  @include media-breakpoint-down(xs) {
     font-size: 14px;
   }
 }
@@ -71,11 +74,15 @@ strong {
 }
 
 h1, h2 {
-  font-size: 1.5rem;
-  font-weight: 100;
+  font-size: 1.6rem;
+  font-weight: 200;
 
   @media (min-width: 48.0em) {
     letter-spacing: -0.05rem;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -84,6 +91,10 @@ a {
   text-decoration: none;
 
   &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
     text-decoration: none;
   }
 }

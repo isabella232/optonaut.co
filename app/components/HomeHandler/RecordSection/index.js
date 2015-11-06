@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-import React from 'react';
-import styles from './index.scss';
+import React from 'react'
+import styles from './index.scss'
 
 export default class RecordSection extends React.Component {
 
@@ -9,12 +9,12 @@ export default class RecordSection extends React.Component {
     return (
       <div className={styles.root}>
         <div className={styles.headline}>
-          <h2>It has never been easier to <strong>capture scenes in 3D</strong></h2>
+          <h2>It has never been easier to <br /><strong>capture scenes in 3D</strong></h2>
         </div>
         <div className='container'>
           <div className={`${styles.wrapper} row`}>
             <div className={styles.left}>
-              <img src={require('../../../assets/images/record.jpg')} />
+              <img src={require('./record.jpg')} />
             </div>
             <div className={styles.right}>
               <ul>
@@ -26,7 +26,7 @@ export default class RecordSection extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 

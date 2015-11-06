@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-import React from 'react';
+import React from 'react'
 
-require('./index.less');
+require('./index.less')
 
 export default class FeaturesSection extends React.Component {
   render() {
@@ -27,6 +27,6 @@ export default class FeaturesSection extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }

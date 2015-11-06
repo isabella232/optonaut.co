@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
 var isClient = function() {
-  return typeof window !== 'undefined' && 'document' in window;
-};
+  return typeof window !== 'undefined' && 'document' in window
+}
 
 /**
  * Contains parameters for the <HEAD> that will be examined when the <HEAD> is
@@ -11,22 +11,22 @@ var isClient = function() {
  * @constructor
  */
 var HeadParams = function(title, description) {
-  this.title = title || 'Percolate Studio: Product Design & Software Engineering';
-  this.description = description || 'Percolate Studio builds digital products that improve people\'s lives';
-};
+  this.title = title || 'Percolate Studio: Product Design & Software Engineering'
+  this.description = description || 'Percolate Studio builds digital products that improve people\'s lives'
+}
 
 /** Sets the page title */
 HeadParams.prototype.setTitle = function(title) {
-  this.title = title;
+  this.title = title
 
   if (isClient()) {
-    document.title = title;
+    document.title = title
   }
-};
+}
 
 /** Sets content for the description meta tag */
 HeadParams.prototype.setDescription = function(description) {
-  this.description = description;
-};
+  this.description = description
+}
 
-module.exports = HeadParams;
+module.exports = HeadParams

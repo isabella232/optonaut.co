@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+:local(.root) {
+  @include make-container();
+  position: relative;
+  width: 100%;
+  display: flex;
+  float: left;
+  color: $dark-grey;
+  margin: 2rem 0;
+
+  @include media-breakpoint-up(md) {
+    font-size: 0.8rem;
+  }
+}
+
+:local(.left) {
+  @include make-col-span(9);
+
+  @include media-breakpoint-down(sm) {
+    @include make-col-span(12);
+  }
+}
+
+:local(.right) {
+  @include make-col-span(3);
+
+  @include media-breakpoint-down(sm) {
+    @include make-col-span(12);
+  }
+}

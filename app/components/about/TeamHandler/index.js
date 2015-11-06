@@ -1,15 +1,15 @@
-'use strict';
+'use strict'
 
-import React from 'react';
-import HeadParams from '../../../lib/HeadParams';
+import React from 'react'
+import HeadParams from '../../../lib/HeadParams'
 
-require('./index.less');
+require('./index.less')
 
 export default class TeamHandler extends React.Component {
 
   componentWillMount() {
-    this.props.headParams.setTitle('Team - Optonaut');
-    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.');
+    this.props.headParams.setTitle('Team - Optonaut')
+    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.')
   }
 
   render() {
@@ -32,7 +32,7 @@ export default class TeamHandler extends React.Component {
             </div>
             <div className='one-half column'>
               <img className='team-image' src={require('../../../assets/images/team_emanuel.jpg')} /><br />
-              <strong>Emanuel J&ouml;bstl</strong>
+              <strong>Emanuel J&oumlbstl</strong>
               <ul>
                 <li>Graduated CS</li>
                 <li>BSc Thesis at CMU</li>
@@ -69,10 +69,10 @@ export default class TeamHandler extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
 TeamHandler.propTypes = {
     headParams: React.PropTypes.instanceOf(HeadParams).isRequired
-};
+}

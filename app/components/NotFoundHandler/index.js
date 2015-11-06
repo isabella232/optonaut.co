@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-import React from 'react';
+import React from 'react'
 
 export default class NotFoundHandler extends React.Component {
   render() {
@@ -11,6 +11,6 @@ export default class NotFoundHandler extends React.Component {
         <br/>
         404. Damn.
       </div>
-    );
+    )
   }
 }

@@ -1,15 +1,15 @@
-'use strict';
+'use strict'
 
-import React from 'react';
-import HeadParams from '../../../lib/HeadParams';
+import React from 'react'
+import HeadParams from '../../../lib/HeadParams'
 
-require('./index.less');
+require('./index.less')
 
 export default class ImprintHandler extends React.Component {
 
   componentWillMount() {
-    this.props.headParams.setTitle('Imprint - Optonaut');
-    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.');
+    this.props.headParams.setTitle('Imprint - Optonaut')
+    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.')
   }
 
   render() {
@@ -40,10 +40,10 @@ export default class ImprintHandler extends React.Component {
           and not transmitted to 3rd parties.
         </div>
       </div>
-    );
+    )
   }
 }
 
 ImprintHandler.propTypes = {
     headParams: React.PropTypes.instanceOf(HeadParams).isRequired
-};
+}

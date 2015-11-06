@@ -1,4 +1,5 @@
 @import "../../../variables.scss";
+@import "../../../mixins.scss";
 
 :local(.root) {
   width: 100%;
@@ -14,25 +15,63 @@
   text-align: center;
 
   h2 {
-    margin: 2rem auto 3rem;
+    margin: 2rem auto 2rem;
     padding: 0 1rem;
   }
 }
 
 :local(.review) {
   text-align: center;
+  @include make-row();
+  justify-content: center;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.07);
+  margin: 0 0.1rem;
+  padding: 0.5rem 0;
+}
+
+:local(.image) {
+  @include make-col();
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(xs) {
+    padding-bottom: 0;
+  }
 
   img {
     width: 2rem;
     height: 2rem;
-    margin-right: 0.5rem;
     border-radius: 50%;
+    border: 1px solid #fff;
+  }
+}
+
+:local(.name) {
+
+  padding-left: 0.5rem;
+  font-weight: 500;
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+
+:local(.quote) {
+  @include make-col();
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.2rem;
   }
 }
 
 :local(.points) {
   text-align: center;
-  margin: 0.5rem 0 0;
+  margin: 1rem 0 0;
 }
 
 :local(.point) {
@@ -43,8 +82,26 @@
   width: 0.3rem;
   height: 0.3rem;
   opacity: 0.2;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   &.active {
     opacity: 1;
   }
+}
+
+:local(.fadeEnter) {
+  opacity: 0.01;
+}
+
+:local(.fadeEnterActive) {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+:local(.fadeLeave) {
+  display: none;
 }

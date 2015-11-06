@@ -1,56 +1,37 @@
-'use strict';
-
-import React from 'react';
-import styles from './index.scss';
+import React from 'react'
+import { Link } from 'react-router'
+import styles from './index.scss'
 
 export default class FaqSection extends React.Component {
   render() {
     return (
       <div className={styles.root}>
         <div className={styles.headline}>
-          <h2><strong>Questions?</strong> We have the answer.</h2>
+          <h2><strong>Questions?</strong> <br />We have the answer.</h2>
+        </div>
+        <div className='container'>
+          <div className={styles.question}>
+            <strong>How is it different to other panorama apps?</strong>
+            <p>Optonaut captures scenes in stereoscopic 3D. That means can look around and get a sense of depth of the scene.</p>
+          </div>
+          <div className={styles.question}>
+            <strong>Does Optonaut work with my smartphone?</strong>
+            <p>At the moment we are supporting the iPhone 5 and newer iPhones. Android devices will be supported in the near future as well.</p>
+          </div>
+          <div className={styles.question}>
+            <strong>Do I need VR glasses to use Optonaut?</strong>
+            <p>No, while you can also view Optographs without VR glasses we strongly recommend <Link to='/glasses'>getting some</Link>. Luckily recording works without any additional hardware.</p>
+          </div>
+          <div className={styles.question}>
+            <strong>Can I also record VR videos?</strong>
+            <p>Not yet, but we are already working on a solution for this. And the best news: the recording process will stay the same.</p>
+          </div>
+          <div className={styles.button}>
+            Didn't answer your question?
+            <a href='mailto:hello@optonaut.co'>Ask us anything</a>
+          </div>
         </div>
       </div>
-    );
+    )
   }
 }
-
-      //<div id='section-faq'>
-        //<div className='container' id='section-faq-content'>
-          //<div className='row'>
-            //<div className='one-half column'>
-              //<strong>What's the difference to other panorama apps?</strong><br/>
-              //Optonaut produces stereoscopic images. That means you can view your pictures in 3D. You can look around and get a sense of depth of the scene.
-            //</div>
-            //<div className='one-half column'>
-              //<strong>Does Optonaut work with my smartphone?</strong><br/>
-              //At the moment we are supporting the iPhone 5 and newer iPhones. Android devices will be supported in the near future as well.
-            //</div>
-          //</div>
-          //<div className='row'>
-            //<div className='one-half column'>
-              //<strong>When will Optonaut be released?</strong><br/>
-              //Optonaut for iOS is currently in public beta. The final version will be released in December 2015.
-            //</div>
-            //<div className='one-half column'>
-              //<strong>What is Optonaut going to cost?</strong><br/>
-              //Optonaut is a free app which you can download on the App Store.
-            //</div>
-          //</div>
-        //</div>
-      //</div>
-
-          //<div className='row'>
-            //<div className='one-half column'>
-              //<strong>What data is transmitted to your servers when stitching? </strong><br/>
-              //The images including orientation data of your phone.
-              //At the moment we need to transmit those data since the 3D conversion process is very battery consuming.
-              //If we find a way around that we’ll let you know.
-            //</div>
-            //<div className='one-half column'>
-              //<strong>What data is transmitted to your servers when stitching?</strong><br/>
-              //The images including orientation data of your phone.
-              //At the moment we need to transmit those data since the 3D conversion process is very battery consuming.
-              //If we find a way around that we’ll let you know.
-            //</div>
-          //</div>
