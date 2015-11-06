@@ -1,6 +1,7 @@
 import React from 'react'
 import HeadSection from './HeadSection'
 import AbstractSection from './AbstractSection'
+import TeamSection from './TeamSection'
 import HeadParams from '../../lib/HeadParams'
 
 export default class AboutHandler extends React.Component {
@@ -15,6 +16,7 @@ export default class AboutHandler extends React.Component {
       <div>
         <HeadSection />
         <AbstractSection />
+        <TeamSection />
       </div>
     )
   }
