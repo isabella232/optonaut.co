@@ -1,9 +1,8 @@
 'use strict'
 
 import React from 'react'
-import HeadParams from '../../../lib/HeadParams'
-
-require('./index.less')
+import HeadParams from '../../lib/HeadParams'
+import styles from './index.scss'
 
 export default class TermsHandler extends React.Component {
 
@@ -95,5 +94,5 @@ Menlo Park, CA 94025</p>
 }
 
 TermsHandler.propTypes = {
-    headParams: React.PropTypes.instanceOf(HeadParams).isRequired
+  headParams: React.PropTypes.instanceOf(HeadParams)
 }

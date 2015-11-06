@@ -31,7 +31,7 @@ export default class ReviewsSection extends React.Component {
     if (this._timeout) {
       clearTimeout(this._timeout)
     }
-    //this._timeout = setTimeout(this._cycleForward, 4000)
+    this._timeout = setTimeout(this._cycleForward, 4000)
   }
 
   _pick(active) {

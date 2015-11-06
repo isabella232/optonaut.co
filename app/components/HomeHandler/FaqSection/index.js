@@ -20,7 +20,7 @@ export default class FaqSection extends React.Component {
           </div>
           <div className={styles.question}>
             <strong>Do I need VR glasses to use Optonaut?</strong>
-            <p>No, while you can also view Optographs without VR glasses we strongly recommend <Link to='/glasses'>getting some</Link>. Luckily recording works without any additional hardware.</p>
+            <p>No, while you can also view Optographs without VR glasses we strongly recommend <Link to='/vr-glasses'>getting some</Link>. Luckily recording works without any additional hardware.</p>
           </div>
           <div className={styles.question}>
             <strong>Can I also record VR videos?</strong>

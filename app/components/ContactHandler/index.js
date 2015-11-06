@@ -1,14 +1,13 @@
 'use strict'
 
 import React from 'react'
-import HeadParams from '../../../lib/HeadParams'
+import HeadParams from '../../lib/HeadParams'
+import styles from './index.scss'
 
-require('./index.less')
-
-export default class ImprintHandler extends React.Component {
+export default class ContactHandler extends React.Component {
 
   componentWillMount() {
-    this.props.headParams.setTitle('Imprint - Optonaut')
+    this.props.headParams.setTitle('Contact - Optonaut')
     this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.')
   }
 
@@ -44,6 +43,6 @@ export default class ImprintHandler extends React.Component {
   }
 }
 
-ImprintHandler.propTypes = {
-    headParams: React.PropTypes.instanceOf(HeadParams).isRequired
+ContactHandler.propTypes = {
+  headParams: React.PropTypes.instanceOf(HeadParams)
 }
