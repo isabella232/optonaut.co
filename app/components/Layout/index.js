@@ -1,23 +1,25 @@
-'use strict'
-
 import React from 'react'
+import Helmet from 'react-helmet'
 import NavBar from '../NavBar'
 import Footer from '../Footer'
-import HeadParams from '../../lib/HeadParams'
 
 require('./index.scss')
 
 export default class Layout extends React.Component {
 
   render() {
-    let headParams = new HeadParams()
-    let children = React.cloneElement(this.props.children, { headParams })
-
     return (
       <div>
+        <Helmet
+          titleTemplate='%s  - Optonaut'
+          meta={[
+            {"name": "description", "content": "Virtual reality pictures with your smartphone"},
+            {"property": "og:type", "content": "article"}
+          ]}
+        />
         <NavBar />
         <div id='content'>
-          {children}
+          {this.props.children}
         </div>
         <Footer />
       </div>
@@ -27,5 +29,5 @@ export default class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-    children: React.PropTypes.object.isRequired
+  children: React.PropTypes.object.isRequired
 }

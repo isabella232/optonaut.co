@@ -1,19 +1,13 @@
-'use strict'
-
 import React from 'react'
-import HeadParams from '../../lib/HeadParams'
+import Helmet from 'react-helmet'
 import styles from './index.scss'
 
 export default class ContactHandler extends React.Component {
 
-  componentWillMount() {
-    this.props.headParams.setTitle('Contact - Optonaut')
-    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.')
-  }
-
   render() {
     return (
       <div id='imprint'>
+        <Helmet title='About' />
         <div className='container' id='imprint-content'>
           Optonaut Limited<br /><br />
 
@@ -41,8 +35,5 @@ export default class ContactHandler extends React.Component {
       </div>
     )
   }
-}
 
-ContactHandler.propTypes = {
-  headParams: React.PropTypes.instanceOf(HeadParams)
 }

@@ -1,19 +1,13 @@
-'use strict'
-
 import React from 'react'
-import HeadParams from '../../lib/HeadParams'
+import Helmet from 'react-helmet'
 import styles from './index.scss'
 
 export default class TermsHandler extends React.Component {
 
-  componentWillMount() {
-    this.props.headParams.setTitle('Terms & Conditions - Optonaut')
-    this.props.headParams.setDescription('Take Virtual Reality Photographs With Your Smartphone.')
-  }
-
   render() {
     return (
       <div id='terms'>
+        <Helmet title='Terms' />
         <div className='container' id='terms-content'>
           <h1>Terms of Use</h1>
 <p><strong>These Terms of Use are effective on October 1st, 2015</strong>. </p>
@@ -91,8 +85,4 @@ Menlo Park, CA 94025</p>
       </div>
     )
   }
-}
-
-TermsHandler.propTypes = {
-  headParams: React.PropTypes.instanceOf(HeadParams)
 }

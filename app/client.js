@@ -2,7 +2,6 @@ import React from 'react'
 import { render } from 'react-dom'
 import { createHistory } from 'history'
 import { Router } from 'react-router'
-import HeadParams from './lib/HeadParams'
 import Routes from './components/Routes'
 import FastClick from 'fastclick'
 

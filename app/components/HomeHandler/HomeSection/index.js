@@ -114,7 +114,7 @@ export default class HomeSection extends React.Component {
       <div className={styles.root}>
         <div className={styles.background}>{/*backgroundVideo*/}</div>
         <div className={styles.headline}>
-          <h1><strong>Virtual reality pictures</strong><br /> with your smartphone</h1>
+          <h1>“It's the <strong>Instagram</strong> <br />for <strong>Virtual Reality</strong>”</h1>
         </div>
         <div className={styles.foot}>
           <div className={styles.footBackground}>
