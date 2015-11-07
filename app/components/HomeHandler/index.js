@@ -11,7 +11,7 @@ export default class HomeHandler extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title='Optonaut' titleTemplate='Optonaut' />
+        <Helmet title='Optonaut - Instagram for VR' titleTemplate='%s' />
         <HomeSection />
         <RecordSection />
         <DiscoverSection />

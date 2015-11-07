@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
           <div className={styles.nav}>
             <ul>
               <li><Link to='/about'>About</Link></li>
-              <li><Link to='/blog'>Blog</Link></li>
+              <li><a href='http://blog.optonaut.co'>Blog</a></li>
               <li><Link to='/terms'>Terms</Link></li>
               <li><Link to='/contact'>Contact</Link></li>
             </ul>
