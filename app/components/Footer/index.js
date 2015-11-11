@@ -14,10 +14,11 @@ export default class Footer extends React.Component {
           </div>
           <div className={styles.nav}>
             <ul>
-              <li><Link to='/about'>About</Link></li>
+              <li><Link to='/about' activeClassName='active'>About</Link></li>
+              <li><Link to='/vr-glasses' activeClassName='active'>VR Glasses</Link></li>
               <li><a href='http://blog.optonaut.co'>Blog</a></li>
-              <li><Link to='/terms'>Terms</Link></li>
-              <li><Link to='/contact'>Contact</Link></li>
+              <li><Link to='/terms' activeClassName='active'>Terms</Link></li>
+              <li><Link to='/contact' activeClassName='active'>Contact</Link></li>
             </ul>
           </div>
           <div className={styles.social}>

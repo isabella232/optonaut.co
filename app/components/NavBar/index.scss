@@ -108,9 +108,9 @@
 
   .navbar-nav-default {
     color: #fff;
-    padding: 0.2rem 0;
+    padding: 0.2rem 0 0.17rem;
 
-    &:hover {
+    &:hover, &.active {
       border-bottom: 1px solid #fff;
     }
   }

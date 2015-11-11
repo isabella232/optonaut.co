@@ -8,11 +8,12 @@ export default class WorksWithSection extends React.Component {
       <div className='container'>
         <div className={styles.root}>
           <div className={styles.image}>
-            <img src={require('./badge.png')} />
+            <a href='https://www.google.com/get/cardboard/'><img src={require('./badge.png')} /></a>
           </div>
           <div className={styles.text}>
-            <strong>Optonaut works with most available mobile-based VR headsets</strong><br />
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            <strong>Optonaut works with most phone-based VR headsets.</strong><br />
+            A phone-based VR headset is basically a little box with lenses, that makes your smartphone’s screen cover your complete field of view. Combined with the sensors your phone already has, it allows you to look around and virtually be somewhere else.<br />
+            The <a href='https://www.google.com/get/cardboard/'>Google Cardboard</a> is probably the most famous phone-based VR headset. It's inexpensive and enables everyone to easily try out this new technology. Mobile-based VR glasses have been the trigger for mainstream adoption of virtual reality.
           </div>
         </div>
       </div>

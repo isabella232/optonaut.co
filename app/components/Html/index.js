@@ -11,6 +11,7 @@ export default class Html extends React.Component {
           {this.props.head.meta.toComponent()}
           <meta charSet='utf-8' />
           <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+          <meta name="p:domain_verify" content="da46c60052e4fdbdc183e6e56d1e9d79"/> {/* Pinterest */}
           <meta name='robots' />
           <meta name='viewport' content='initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0, width=device-width' />
 

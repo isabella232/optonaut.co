@@ -9,7 +9,7 @@ export default class HeadSection extends React.Component {
         <div className={styles.root}>
           <div className={styles.head}>
             <h2>Who we are</h2>
-            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Our journey began in fall 2014, when the concept of Optonaut won the biggest Hackathon in Europe. All the positive feedback we got inspired us to take Optonaut to the next level. Since then, it’s been an amazing ride, and we are working hard every day to make our vision a <strike>virtual</strike> reality.</p>
           </div>
           <div className={styles.team}>
             <div className={styles.person}>
@@ -21,7 +21,7 @@ export default class HeadSection extends React.Component {
                   <strong>Johannes Schickling</strong>, Co-founder
                 </div>
                 <div className={styles.personBio}>
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                  Johannes built his first startup at the age of 17, where he learned all what it takes to turn an idea to a business. Having a degree in computer science and a background in design combined with his obsession for virtual reality, Optonaut was his next logcial step.
                 </div>
               </div>
             </div>
@@ -34,7 +34,7 @@ export default class HeadSection extends React.Component {
                   <strong>Emanuel Jöbstl</strong>, Co-founder
                 </div>
                 <div className={styles.personBio}>
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                  After finishing his thesis in computer science at CMU, Emanuel was working at several startups. His deep understanding of computer vision combined with his experience as a professional photographer makes him the perfect fit to develop the core technology of Optonaut.
                 </div>
               </div>
             </div>

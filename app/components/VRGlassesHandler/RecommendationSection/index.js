@@ -12,7 +12,7 @@ export default class RecommendationSection extends React.Component {
           </div>
           <div className={styles.info}>
             <div className={styles.text}>
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              To provide you with the best experience possible, we have teamed up with I AM CARDBOARD, the largest and most experienced cardboard manufacturer in the world. I AM CARDBOARD does not only produce high-quality VR headsets, but also actively works on new designs, to bring a better VR experience to their customers.
             </div>
             <div className={styles.imcardboard}>
               <a href='http://www.imcardboard.com?acc=c81e728d9d4c2f636f067f89cc14862c'><img src={require('./imcardboard.png')} /></a>

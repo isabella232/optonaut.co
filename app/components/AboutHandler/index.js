@@ -9,7 +9,7 @@ export default class AboutHandler extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title='Optonaut' />
+        <Helmet title='About' />
         <HeadSection />
         <AbstractSection />
         <TeamSection />

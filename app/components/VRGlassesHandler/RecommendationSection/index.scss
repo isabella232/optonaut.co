@@ -40,7 +40,7 @@
 :local(.imcardboard) {
   @include make-col-span(4);
   text-align: right;
-  margin-top: -1rem;
+  /*margin-top: -1rem;*/
 
   @include media-breakpoint-down(md) {
     @include make-col-span(12);

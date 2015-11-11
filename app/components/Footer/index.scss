@@ -54,7 +54,7 @@
         color: $dark-grey;
         padding: 0.2rem 0;
 
-        &:hover {
+        &:hover, &.active {
           border-bottom: 1px solid $dark-grey;
         }
       }

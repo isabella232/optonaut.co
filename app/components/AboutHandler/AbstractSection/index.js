@@ -9,8 +9,8 @@ export default class HeadSection extends React.Component {
         <div className={styles.root}>
           <div className={styles.left}>
             <p>
-              <strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong><br/>
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              <strong>Everyone should be able to capture, share and relive moments using virtual reality.</strong><br/>
+              Over the last years, viewing VR images and 360° videos became increasingly popular. However, creating your own VR content is not easily possible or requires special hardware. This is what we set out to change with Optonaut. The next time you go on vacation or visit a special place, you can not only show your loved ones a picture of it, but let them see exactly what you saw.
             </p>
           </div>
           <div className={styles.right}>
