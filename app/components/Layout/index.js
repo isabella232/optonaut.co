@@ -16,7 +16,7 @@ export default class Layout extends React.Component {
             {'name': 'description', 'content': 'Discover, capture and share unique moments and beautiful places just using your phone'},
             {'property': 'og:type', 'content': 'website'},
             {'property': 'og:title', 'content': 'Optonaut - Instagram for Virtual Reality'},
-            {'property': 'og:description', 'content': 'Discover, capture and share unique moments and beautiful places just using your phone'},
+            {'property': 'og:description', 'content': 'Discover, capture and share unique moments and beautiful places just using your smartphone. Get it for free on iPhone or Android.'},
             {'property': 'og:image', 'content': 'http://static.optonaut.co/social/facebook/optonaut.co.jpg'},
             {'property': 'og:site_name', 'content': 'OPTONAUT'},
           ]}
