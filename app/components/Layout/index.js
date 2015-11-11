@@ -14,10 +14,11 @@ export default class Layout extends React.Component {
           titleTemplate='%s  - Optonaut'
           meta={[
             {'name': 'description', 'content': 'Discover, capture and share unique moments and beautiful places just using your phone'},
-            {'property': 'og:type', 'content': 'product'},
+            {'property': 'og:type', 'content': 'website'},
             {'property': 'og:title', 'content': 'Optonaut - Instagram for Virtual Reality'},
             {'property': 'og:description', 'content': 'Discover, capture and share unique moments and beautiful places just using your phone'},
-            {'property': 'og:image', 'content': require('../../assets/images/facebook.jpg')},
+            {'property': 'og:image', 'content': 'http://static.optonaut.co/social/facebook/optonaut.co.jpg'},
+            {'property': 'og:site_name', 'content': 'OPTONAUT'},
           ]}
         />
         <NavBar />
