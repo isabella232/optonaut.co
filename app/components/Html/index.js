@@ -5,7 +5,7 @@ export default class Html extends React.Component {
   render() {
     const markup = this.props.markup
     return (
-      <html>
+      <html xmlns='http://www.w3.org/1999/xhtml' xmlns:fb='http://ogp.me/ns/fb#'>
         <head>
           {this.props.head.title.toComponent()}
           {this.props.head.meta.toComponent()}

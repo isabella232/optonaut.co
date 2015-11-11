@@ -11,7 +11,13 @@ export default class HomeHandler extends React.Component {
   render() {
     return (
       <div>
-        <Helmet title='Optonaut - Instagram for VR' titleTemplate='%s' />
+        <Helmet
+          title='Optonaut - Instagram for VR'
+          titleTemplate='%s'
+          meta={[
+            {'property': 'og:image', 'content': require('./HomeSection/london.jpg')}
+          ]}
+          />
         <HomeSection />
         <RecordSection />
         <DiscoverSection />
