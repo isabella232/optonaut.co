@@ -91,10 +91,7 @@ const prerenderConfig = {
       exclude: /node_modules/,
       loader: 'babel'
     }, {
-      test: /\.svg$/,
-      loader: 'raw'
-    }, {
-      test: /\.(jpg|png)$/,
+      test: /\.(svg|jpg|png)$/,
       loader: 'file!image-webpack'
     }, {
       test: /\.(ttf|eot|woff|woff2)$/,
@@ -126,9 +123,6 @@ const renderConfig = {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel'
-    }, {
-      test: /\.svg$/,
-      loader: 'raw'
     }, {
       test: /\.(svg|jpg|png)$/,
       loader: 'file!image-webpack'
