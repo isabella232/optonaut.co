@@ -10,7 +10,7 @@ FastClick.attach(document.body)
 let history = createHistory()
 
 render((
-  <Router history={history}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
     {Routes}
   </Router>
 ), document.getElementById('app'))

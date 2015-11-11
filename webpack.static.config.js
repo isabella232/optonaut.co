@@ -124,6 +124,9 @@ const renderConfig = {
       exclude: /node_modules/,
       loader: 'babel'
     }, {
+      test: /\.svg$/,
+      loader: 'raw'
+    }, {
       test: /\.(svg|jpg|png)$/,
       loader: 'file!image-webpack'
     }, {
