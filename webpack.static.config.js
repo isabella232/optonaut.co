@@ -91,7 +91,10 @@ const prerenderConfig = {
       exclude: /node_modules/,
       loader: 'babel'
     }, {
-      test: /\.(svg|jpg|png)$/,
+      test: /\.svg$/,
+      loader: 'raw'
+    }, {
+      test: /\.(jpg|png)$/,
       loader: 'file!image-webpack'
     }, {
       test: /\.(ttf|eot|woff|woff2)$/,
