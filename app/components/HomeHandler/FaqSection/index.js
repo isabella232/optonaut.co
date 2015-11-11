@@ -12,7 +12,7 @@ export default class FaqSection extends React.Component {
         <div className='container'>
           <div className={styles.question}>
             <strong>How is it different to other panorama apps?</strong>
-            <p>Optonaut captures scenes in stereoscopic 3D. That means can look around and get a sense of depth of the scene.</p>
+            <p>Optonaut captures scenes in stereoscopic 3D. That means you can look around and get a sense of depth of the scene.</p>
           </div>
           <div className={styles.question}>
             <strong>Does Optonaut work with my smartphone?</strong>
@@ -24,7 +24,7 @@ export default class FaqSection extends React.Component {
           </div>
           <div className={styles.question}>
             <strong>Can I also record VR videos?</strong>
-            <p>Not yet, but we are already working on a solution for this. And the best news: the recording process will stay the same.</p>
+            <p>Not yet, but we are already working on a solution for this. And the best news: The recording process will stay the same.</p>
           </div>
           <div className={styles.button}>
             Didn't answer your question?
