@@ -40,7 +40,10 @@
 :local(.imcardboard) {
   @include make-col-span(4);
   text-align: right;
-  /*margin-top: -1rem;*/
+
+  img {
+    max-width: 100%;
+  }
 
   @include media-breakpoint-down(md) {
     @include make-col-span(12);

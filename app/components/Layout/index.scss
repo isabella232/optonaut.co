@@ -118,6 +118,7 @@ a {
   width: 100%;
   float: left;
   margin-top: 74px;
+  overflow: hidden;
 
   @media (max-width: 749px) {
     margin-top: 60px;
