@@ -14,9 +14,6 @@ export default class HomeHandler extends React.Component {
         <Helmet
           title='Optonaut - Instagram for VR'
           titleTemplate='%s'
-          meta={[
-            {'property': 'og:image', 'content': require('./HomeSection/london.jpg')}
-          ]}
           />
         <HomeSection />
         <RecordSection />

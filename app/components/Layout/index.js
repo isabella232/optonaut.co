@@ -13,8 +13,11 @@ export default class Layout extends React.Component {
         <Helmet
           titleTemplate='%s  - Optonaut'
           meta={[
-            {"name": "description", "content": "Virtual reality pictures with your smartphone"},
-            {"property": "og:type", "content": "article"}
+            {'name': 'description', 'content': 'Discover, capture and share unique moments and beautiful places just using your phone'},
+            {'property': 'og:type', 'content': 'product'},
+            {'property': 'og:title', 'content': 'Optonaut - Instagram for Virtual Reality'},
+            {'property': 'og:description', 'content': 'Discover, capture and share unique moments and beautiful places just using your phone'},
+            {'property': 'og:image', 'content': require('../../assets/images/facebook.jpg')},
           ]}
         />
         <NavBar />
