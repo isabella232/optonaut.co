@@ -1,0 +1,17 @@
+@import "../../../../mixins.scss";
+
+:local(.root) {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: #000;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+
+  img {
+    &:hover {
+      @include filter-3d;
+    }
+  }
+}

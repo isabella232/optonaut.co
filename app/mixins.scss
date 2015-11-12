@@ -1,0 +1,76 @@
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
+
+@mixin icon {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin text-3d {
+  text-shadow: -0.1em 0 1px rgb(30,242,241), 0.1em 0 1px rgb(246,5,10);
+  animation: move-text-3d 2s;
+}
+
+@mixin box-3d {
+  box-shadow: -0.1em 0 1px rgb(30,242,241), 0.1em 0 1px rgb(246,5,10);
+  animation: move-box-3d 2s;
+}
+
+@mixin filter-3d {
+  filter: drop-shadow(-0.1em 0 1px rgb(30,242,241)) drop-shadow(0.1em 0 1px rgb(246,5,10));
+  animation: move-filter-3d 2s;
+}
+
+@-webkit-keyframes move-text-3d {
+  0%, 40% {
+    text-shadow: -0.1em 0 1px rgb(30,242,241), 0.1em 0 1px rgb(246,5,10);
+  }
+  40%, 42% {
+    text-shadow: -0.12em -0.12em 1px rgb(30,242,241), 0.12em 0.12em 1px rgb(246,5,10);
+  }
+  44%, 46% {
+    text-shadow: 0.12em 0.12em 1px rgb(30,242,241), -0.12em -0.12em 1px rgb(246,5,10);
+  }
+  48%, 40% {
+    text-shadow: -0.1em 0 1px rgb(30,242,241), 0.1em 0 1px rgb(246,5,10);
+  }
+}
+
+@-webkit-keyframes move-box-3d {
+  0%, 40% {
+    box-shadow: -0.1em 0 1px rgb(30,242,241), 0.1em 0 1px rgb(246,5,10);
+  }
+  40%, 42% {
+    box-shadow: -0.12em -0.12em 1px rgb(30,242,241), 0.12em 0.12em 1px rgb(246,5,10);
+  }
+  44%, 46% {
+    box-shadow: 0.12em 0.12em 1px rgb(30,242,241), -0.12em -0.12em 1px rgb(246,5,10);
+  }
+  48%, 40% {
+    box-shadow: -0.1em 0 1px rgb(30,242,241), 0.1em 0 1px rgb(246,5,10);
+  }
+}
+
+@-webkit-keyframes move-filter-3d {
+  0%, 40% {
+    filter: drop-shadow(-0.1em 0 1px rgb(30,242,241)) drop-shadow(0.1em 0 1px rgb(246,5,10));
+  }
+  40%, 42% {
+    filter: drop-shadow(-0.12em -0.12em 1px rgb(30,242,241)) drop-shadow(0.12em 0.12em 1px rgb(246,5,10));
+  }
+  44%, 46% {
+    filter: drop-shadow(0.12em 0.12em 1px rgb(30,242,241)) drop-shadow(-0.12em -0.12em 1px rgb(246,5,10));
+  }
+  48%, 40% {
+    filter: drop-shadow(-0.1em 0 1px rgb(30,242,241)) drop-shadow(0.1em 0 1px rgb(246,5,10));
+  }
+}

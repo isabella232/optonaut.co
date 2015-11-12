@@ -1,0 +1,16 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+:local(.root) {
+  position: relative;
+  float: left;
+  color: #fff;
+  width: 100%;
+  padding: 3rem 0;
+  background: $accent;
+  text-align: justify;
+
+  h2 {
+    margin: 0.5rem 0;
+  }
+}

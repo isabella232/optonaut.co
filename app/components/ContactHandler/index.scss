@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+#imprint {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  float: left;
+  color: $dark-grey;
+}
+
+#imprint-content {
+  margin: 2rem auto;
+
+  h3 {
+    margin: 1rem 0 0.5rem;
+  }
+}

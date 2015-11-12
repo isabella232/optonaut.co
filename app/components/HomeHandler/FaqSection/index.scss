@@ -1,0 +1,86 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+:local(.root) {
+  width: 100%;
+  position: relative;
+  float: left;
+  color: $dark-grey;
+  padding: 2rem 0 2rem;
+}
+
+:local(.headline) {
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    margin: 2rem auto 3rem;
+    padding: 0 1rem;
+  }
+}
+
+:local(.question) {
+  font-size: 0.8rem;
+  position: relative;
+  padding-left: 5.5rem;
+  min-height: 4rem;
+  max-width: 590px;
+  margin: 0 auto 2rem;
+  line-height: 1.1rem;
+
+  @media (max-width: 47.9em) {
+    font-size: 1rem;
+  }
+
+  &:before {
+    @include icon;
+    position: absolute;
+    text-align: right;
+    left: 0;
+    font-size: 4rem;
+  }
+
+  strong {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+:local(.question):nth-child(1):before {
+  content: "\e901";
+}
+
+:local(.question):nth-child(2):before {
+  content: "\e900";
+  left: 0.68rem;
+}
+
+:local(.question):nth-child(3):before {
+  content: "\e904";
+}
+
+:local(.question):nth-child(4):before {
+  content: "\e903";
+}
+
+:local(.button) {
+  text-align: center;
+  margin: 3rem 0 2rem;
+
+  a {
+    color: #fff;
+    background: $accent;
+    padding: 0.8em 1.8em;
+    border-radius: 0.15rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+
+    &:hover {
+      background: none;
+      color: $accent;
+      box-shadow: inset 0 0 0 1px $accent;
+    }
+  }
+}

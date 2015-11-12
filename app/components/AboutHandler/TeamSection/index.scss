@@ -1,0 +1,66 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+:local(.root) {
+  width: 100%;
+  float: left;
+  color: $dark-grey;
+  margin: 1rem auto 2rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 0.8rem;
+  }
+}
+
+:local(.head) {
+
+}
+
+:local(.team) {
+  @include make-row();
+  margin: 0.5rem 0 0;
+}
+
+:local(.person) {
+  @include make-col-span(6);
+  padding: 1rem 0;
+
+  @include media-breakpoint-up(lg) {
+    &:nth-child(even) {
+      padding-left: 2rem;
+    }
+
+    &:nth-child(odd) {
+      padding-right: 2rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    @include make-col-span(12);
+  }
+}
+
+:local(.personPicture) {
+  float: left;
+  width: 100px;
+  margin-right: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+:local(.personInfo) {
+  float: left;
+  width: calc(100% - 100px - 1rem);
+}
+
+:local(.personBio) {
+  font-size: 0.9rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 0.7rem;
+  }
+}

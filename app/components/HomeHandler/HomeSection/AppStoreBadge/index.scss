@@ -1,0 +1,86 @@
+@import "../../../../mixins.scss";
+
+:local(.appstorebadge) {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: #000;
+  border-radius: 5px;
+  text-align: left;
+  display: inline-block;
+  overflow: hidden;
+
+  &:hover {
+    :local(.text) {
+      @include text-3d;
+    }
+
+    :local(.iphone) {
+      @include box-3d;
+    }
+  }
+}
+
+:local(.text) {
+  transition: text-shadow 0.15s ease-out;
+  position: absolute;
+  top: 0px;
+  left: 37px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  color: #fff;	
+}
+
+:local(.line1) {
+  position: absolute;
+  top: 6px;
+  width: 112px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+:local(.line2) {
+  position: absolute;
+  width: 120px;
+  top: 16px;
+  font-size: 21.3px;
+  letter-spacing: -0.01em;
+}
+
+:local(.iphone) {
+  transition: box-shadow 0.15s ease-out;
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  top: 8px;
+  height: 34px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+:local(.button) {
+  position: absolute;
+  left: 7.5px;
+  width: 3.5px;
+  top: 29.5px;
+  height: 3.5px;
+  background: #000;
+  border-radius: 50%;
+}
+
+:local(.screen) {
+  position: absolute;
+  left: 1px;
+  width: 16px;
+  top: 6px;
+  height: 22px;
+  background: #000;
+}
+
+:local(.earpiece) {
+  position: absolute;
+  left: 7.5px;
+  top: 3px;
+  width: 3px;
+  height: 0.5px;
+  background: #000;
+}

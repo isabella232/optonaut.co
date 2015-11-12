@@ -1,0 +1,113 @@
+@import "../../variables.scss";
+@import "../../mixins.scss";
+
+:local(.root) {
+  width: 100%;
+  float: left;
+  background: #F9F9F9;
+  color: $dark-grey;
+  padding: 2rem 0;
+}
+
+:local(.logo) {
+  float: left;
+  width: 8rem;
+
+  @media (max-width: 47.9em) {
+    width: 100%;
+    text-align: center;
+  }
+
+  a {
+    &:before {
+      @include icon;
+      color: $dark-grey;
+      font-size: 1.3rem;
+      content: "\e902";
+    }
+  }
+}
+
+:local(.nav) {
+  float: left;
+  width: calc(100% - 16rem);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.1rem 0;
+
+  @media (max-width: 47.9em) {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 1.1rem 0 1.7rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      padding: 0 0.5rem;
+
+      a {
+        color: $dark-grey;
+        padding: 0.2rem 0;
+
+        &:hover, &.active {
+          border-bottom: 1px solid $dark-grey;
+        }
+      }
+    }
+  }
+}
+
+:local(.social) {
+  float: right;
+  width: 8rem;
+  text-align: right;
+
+  @media (max-width: 47.9em) {
+    width: 100%;
+    text-align: center;
+  }
+
+  a {
+    &:before {
+      @include icon;
+      font-size: 1rem;
+      color: $dark-grey;
+      padding: 0 0.3rem;
+
+      @media (max-width: 47.9em) {
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+
+}
+
+:local(.social) a:nth-child(1):before {
+  content: "\e908";
+}
+
+:local(.social) a:nth-child(1):hover:before {
+  color: #3b5998;
+}
+
+:local(.social) a:nth-child(2):before {
+  content: "\e909";
+}
+
+:local(.social) a:nth-child(2):hover:before {
+  color: #55acee;
+}
+
+:local(.social) a:nth-child(3):before {
+  content: "\e907";
+}
+
+:local(.social) a:nth-child(3):hover:before {
+  color: #3f729b;
+}

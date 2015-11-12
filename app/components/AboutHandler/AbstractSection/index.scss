@@ -1,0 +1,56 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+:local(.root) {
+  @include make-row();
+  position: relative;
+  width: 100%;
+  display: flex;
+  float: left;
+  color: $dark-grey;
+  margin: 2rem auto 1rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 0.8rem;
+  }
+}
+
+:local(.left) {
+  @include make-col-span(9);
+  padding-right: 4.5rem;
+
+  strong {
+    padding-bottom: 0.1rem;
+    display: inline-block;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0;
+    @include make-col-span(12);
+  }
+}
+
+:local(.right) {
+  @include make-col-span(3);
+
+  @include media-breakpoint-down(md) {
+    @include make-col-span(12);
+  }
+
+  a {
+    display: block;
+    margin: 0 0 0.5rem;
+    text-align: center;
+    padding: 0.5em 1.1em;
+    border-radius: 0.15rem;
+    font-weight: 500;
+    box-shadow: inset 0 0 0 1px $dark-grey;
+    color: $dark-grey;
+
+    &:hover {
+      background: $dark-grey;
+      color: #fff;
+      box-shadow: 0;
+    }
+  }
+}
