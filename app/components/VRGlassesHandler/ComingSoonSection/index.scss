@@ -8,10 +8,7 @@
   width: 100%;
   padding: 3rem 0;
   background: $accent;
-
-  @include media-breakpoint-down(md) {
-    text-align: center;
-  }
+  text-align: justify;
 
   h2 {
     margin: 0.5rem 0;

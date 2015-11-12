@@ -90,6 +90,7 @@ export default class RequestInviteForm extends React.Component {
 
     return (
       <div className={styles.root}>
+        <div className={styles.close} onClick={this.props.close} />
         <div className={styles.message}>
           {msg}
         </div>

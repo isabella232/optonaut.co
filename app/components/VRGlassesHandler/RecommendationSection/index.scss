@@ -6,10 +6,7 @@
   float: left;
   color: $dark-grey;
   margin: 2rem auto;
-
-  @include media-breakpoint-down(md) {
-    text-align: center;
-  }
+  text-align: justify;
 }
 
 :local(.head) {

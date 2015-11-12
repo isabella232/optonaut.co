@@ -18,8 +18,8 @@ export default class HomeSection extends React.Component {
     }
   }
 
-  _showAndroidWaitlist() {
-    this.setState({ showAndroidWaitlist: true })
+  _toggleAndroidWaitlist() {
+    this.setState({ showAndroidWaitlist: !this.state.showAndroidWaitlist })
   }
 
   componentDidMount() {
@@ -85,7 +85,7 @@ export default class HomeSection extends React.Component {
     let foot
     if (this.state.showAndroidWaitlist) {
       foot = (
-        <AndroidWaitlist />
+        <AndroidWaitlist close={this._toggleAndroidWaitlist.bind(this)} />
       )
     } else {
       foot = (
@@ -102,7 +102,7 @@ export default class HomeSection extends React.Component {
             <a href='https://itunes.apple.com/app/apple-store/id1013817652?pt=117831029&ct=website&mt=8'>
               <AppStoreBadge />
             </a>
-            <a className={styles.footPlayStore} onClick={this._showAndroidWaitlist.bind(this)}>
+            <a className={styles.footPlayStore} onClick={this._toggleAndroidWaitlist.bind(this)}>
               <PlayStoreBadge />
             </a>
           </div>
