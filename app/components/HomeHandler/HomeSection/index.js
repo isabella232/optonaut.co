@@ -99,7 +99,7 @@ export default class HomeSection extends React.Component {
             </div>
           </div>
           <div className={styles.footRight}>
-            <a href='https://itunes.apple.com/us/app/optonaut/id1013817652'>
+            <a href='https://itunes.apple.com/app/apple-store/id1013817652?pt=117831029&ct=website&mt=8'>
               <AppStoreBadge />
             </a>
             <a className={styles.footPlayStore} onClick={this._showAndroidWaitlist.bind(this)}>

@@ -55,7 +55,7 @@ export default class NavBar extends React.Component {
             <Link to='/about' activeClassName="active" className='navbar-nav-default'>About</Link>
             <Link to='/vr-glasses' activeClassName="active" className='navbar-nav-default'>VR</Link>
             <a className='navbar-nav-default' href='http://blog.optonaut.co'>Blog</a>
-            <a className='navbar-nav-special' href='https://itunes.apple.com/us/app/optonaut/id1013817652'>Try out now</a>
+            <a className='navbar-nav-special' href='https://itunes.apple.com/app/apple-store/id1013817652?pt=117831029&ct=website&mt=8'>Try out now</a>
           </div>
           <div onClick={this._toggleNav} className={`${styles.menu} show-small icon`}/>
         </div>
