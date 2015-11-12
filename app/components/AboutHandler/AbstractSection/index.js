@@ -9,8 +9,8 @@ export default class HeadSection extends React.Component {
         <div className={styles.root}>
           <div className={styles.left}>
             <p>
-              <strong>Everyone should be able to capture, share and relive moments using virtual reality.</strong><br/>
-              Over the last years, viewing VR images and 360° videos became increasingly popular. However, creating your own VR content is not easily possible or requires special hardware. This is what we set out to change with Optonaut. The next time you go on vacation or visit a special place, you can not only show your loved ones a picture of it, but let them see exactly what you saw.
+              <strong>Everyone should be able to capture, share and re-live moments using virtual reality.</strong><br/>
+              Over the last few years, viewing VR images and 360° videos became increasingly popular. However, creating your own VR content is not easy, and requires special hardware. This is what we set out to change with Optonaut. The next time you go on vacation or visit a special place, you can not only show your loved ones a picture of it, but let them experience exactly what you did.
             </p>
           </div>
           <div className={styles.right}>

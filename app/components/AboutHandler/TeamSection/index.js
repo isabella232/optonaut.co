@@ -9,7 +9,7 @@ export default class HeadSection extends React.Component {
         <div className={styles.root}>
           <div className={styles.head}>
             <h2>Who we are</h2>
-            <p>Our journey began in fall 2014, when the concept of Optonaut won the biggest Hackathon in Europe. All the positive feedback we got inspired us to take Optonaut to the next level. Since then, it’s been an amazing ride, and we are working hard every day to make our vision a <strike>virtual</strike> reality.</p>
+            <p>Our journey began in 2014, when the concept of Optonaut won the biggest Hackathon in Europe. All of the positive feedback inspired us to take Optonaut to the next level. Since then, it’s been an incredible ride, and we are working hard every day to make our vision a <strike>virtual</strike> reality.</p>
           </div>
           <div className={styles.team}>
             <div className={styles.person}>
