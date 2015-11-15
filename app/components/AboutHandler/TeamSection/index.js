@@ -21,7 +21,7 @@ export default class HeadSection extends React.Component {
                   <strong>Johannes Schickling</strong>, Co-founder
                 </div>
                 <div className={styles.personBio}>
-                  Johannes built his first startup at the age of 17, where he learned all what it takes to turn an idea to a business. Having a degree in computer science and a background in design combined with his obsession for virtual reality, Optonaut was the next logical step.
+                  Johannes built his first startup at the age of 17, where he learned all what it takes to turn an idea into a business. Having a degree in computer science and a background in design combined with his obsession for virtual reality, Optonaut was the next logical step.
                 </div>
               </div>
             </div>
