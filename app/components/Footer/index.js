@@ -16,7 +16,7 @@ export default class Footer extends React.Component {
             <ul>
               <li><Link to='/about' activeClassName='active'>About</Link></li>
               <li><Link to='/vr-glasses' activeClassName='active'>VR</Link></li>
-              <li><a href='http://blog.optonaut.co'>Blog</a></li>
+              <li><a href='https://medium.com/@optonaut'>Blog</a></li>
               <li><Link to='/terms' activeClassName='active'>Terms</Link></li>
               <li><Link to='/contact' activeClassName='active'>Contact</Link></li>
             </ul>
