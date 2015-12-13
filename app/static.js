@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { renderToString, renderToStaticMarkup } from 'react-dom/server'
+import { renderToString } from 'react-dom/server'
 import { match, RoutingContext } from 'react-router'
 import { minify } from 'html-minifier'
 import Routes from './components/Routes'
